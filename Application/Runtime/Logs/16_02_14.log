@@ -1,0 +1,2090 @@
+[ 2016-02-14T03:32:28+08:00 ] 66.249.73.212 /index.php/page/index/name/dszjg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003120s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.004205s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'dszjg' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000520s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'dszjg' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000483s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 8 ) ORDER BY id DESC  [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002032s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'dszjg') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000949s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-02-14T03:46:37+08:00 ] 180.76.15.29 /index.php/product/eread/id/176
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003676s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003028s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 176 ) LIMIT 1   [ RunTime:0.000421s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T04:37:55+08:00 ] 66.249.73.220 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002939s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003041s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003017s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000509s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002803s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003502s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000398s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_images` [ RunTime:0.002667s ]
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 722 ) LIMIT 1   [ RunTime:0.000380s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 720 ) LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 725 ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 721 ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 724 ) LIMIT 1   [ RunTime:0.000377s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2016-02-14T04:38:31+08:00 ] 66.249.73.148 /index.php/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002765s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.003040s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `lang` = 'zh-cn' ) ORDER BY id DESC  [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.004352s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'message') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000584s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\ef6f41eceba673c7cd7936a8ca6a2b03.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\ef6f41eceba673c7cd7936a8ca6a2b03.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001164s ]
+
+[ 2016-02-14T04:54:17+08:00 ] 66.249.73.220 /index.php/news/index/cid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002846s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.004567s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002952s ]
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.cid = '5' ) AND ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000648s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.002534s ]
+SQL: SELECT n.id,n.cid,n.title,n.summary,n.update_time,n.click,n.image_id,c.name as cname,n.published FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.cid = '5' ) AND ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003162s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'news') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000413s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 6 行.
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002781s ]
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 120 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=0 )  [ RunTime:0.000661s ]
+SQL: SELECT * FROM `pa_category` WHERE ( pid=1 ) ORDER BY cid DESC  [ RunTime:0.000459s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=2 ) ORDER BY cid DESC  [ RunTime:0.000348s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=3 ) ORDER BY cid DESC  [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=4 ) ORDER BY cid DESC  [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=5 ) ORDER BY cid DESC  [ RunTime:0.000419s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=6 ) ORDER BY cid DESC  [ RunTime:0.000557s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 126 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=5 )  [ RunTime:0.000364s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2016-02-14T05:10:39+08:00 ] 66.249.73.228 /index.php/product/index/cid/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002875s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003589s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003061s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.cid = '7' ) AND ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002964s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.cid = '7' ) AND ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003100s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000394s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_images` [ RunTime:0.003124s ]
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 724 ) LIMIT 1   [ RunTime:0.000604s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2016-02-14T05:16:34+08:00 ] 180.76.15.33 /index.php/product/eread/id/209
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003541s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.004188s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 209 ) LIMIT 1   [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T05:16:34+08:00 ] 180.76.15.147 /index.php/product/eindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003815s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003078s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002920s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) LIMIT 1   [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003158s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003246s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000510s ]
+ERR: Template does't exist:./Application/Home/View/default/Product/eindex.html
+
+[ 2016-02-14T05:37:40+08:00 ] 66.249.73.157 /index.php/Register/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002888s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_nationality` [ RunTime:0.004601s ]
+SQL: SELECT * FROM `pa_nationality`  [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `pa_city` [ RunTime:0.002469s ]
+SQL: SELECT * FROM `pa_city` WHERE ( parentid=0 ) ORDER BY sort asc  [ RunTime:0.000831s ]
+SQL: SELECT * FROM `pa_city` WHERE ( parentid=12 ) ORDER BY sort asc  [ RunTime:0.000691s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 5 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 6 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 542 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2016-02-14T05:43:22+08:00 ] 66.249.73.212 /index.php/Register/queryscore
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002811s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000475s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000830s ]
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\f9dfa8ed89179d37e7d14a4365718547.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\f9dfa8ed89179d37e7d14a4365718547.php 第 5 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\f9dfa8ed89179d37e7d14a4365718547.php 第 6 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\f9dfa8ed89179d37e7d14a4365718547.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\f9dfa8ed89179d37e7d14a4365718547.php 第 443 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001133s ]
+
+[ 2016-02-14T05:59:44+08:00 ] 66.249.73.212 /index.php/page/index/name/gnxswl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002888s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.003748s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'gnxswl' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000610s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'gnxswl' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000463s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 19 ) ORDER BY id DESC  [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002668s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'gnxswl') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000385s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000739s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2016-02-14T06:23:32+08:00 ] 180.76.15.160 /index.php/product/eread/id/269
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000135s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003679s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002949s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 269 ) LIMIT 1   [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T06:23:33+08:00 ] 180.76.15.23 /index.php/product/eindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003405s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002557s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.004398s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) LIMIT 1   [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002976s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002419s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000477s ]
+ERR: Template does't exist:./Application/Home/View/default/Product/eindex.html
+
+[ 2016-02-14T06:23:55+08:00 ] 66.249.73.157 /index.php/news/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003167s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003552s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003019s ]
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000672s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003337s ]
+SQL: SELECT n.id,n.cid,n.title,n.summary,n.update_time,n.click,n.image_id,c.name as cname,n.published FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002168s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'news') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000421s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 6 行.
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003775s ]
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 120 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=0 )  [ RunTime:0.000427s ]
+SQL: SELECT * FROM `pa_category` WHERE ( pid=1 ) ORDER BY cid DESC  [ RunTime:0.000359s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=2 ) ORDER BY cid DESC  [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=3 ) ORDER BY cid DESC  [ RunTime:0.000353s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=4 ) ORDER BY cid DESC  [ RunTime:0.000332s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=5 ) ORDER BY cid DESC  [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=6 ) ORDER BY cid DESC  [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 126 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid= )  [ RunTime:0.000263s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2016-02-14T06:32:28+08:00 ] 66.249.73.220 /index.php/page/index/name/dsship
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002813s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.003349s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'dsship' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000663s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'dsship' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000563s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 12 ) ORDER BY id DESC  [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003058s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'dsship') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000733s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2016-02-14T06:44:25+08:00 ] 66.249.73.148 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002995s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003948s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002015s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002988s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000684s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003647s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003113s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_images` [ RunTime:0.002773s ]
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 722 ) LIMIT 1   [ RunTime:0.000376s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 720 ) LIMIT 1   [ RunTime:0.000338s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 725 ) LIMIT 1   [ RunTime:0.000357s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 721 ) LIMIT 1   [ RunTime:0.000418s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 724 ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2016-02-14T06:48:50+08:00 ] 66.249.73.212 /index.php/page/index/name/rlzy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002997s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.003685s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'rlzy' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'rlzy' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000440s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 13 ) ORDER BY id DESC  [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002913s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'rlzy') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2016-02-14T07:05:12+08:00 ] 66.249.73.228 /index.php/news/index/cid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003099s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.cid = '2' ) AND ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000674s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.002832s ]
+SQL: SELECT n.id,n.cid,n.title,n.summary,n.update_time,n.click,n.image_id,c.name as cname,n.published FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.cid = '2' ) AND ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002161s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'news') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 6 行.
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003067s ]
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 120 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=0 )  [ RunTime:0.000398s ]
+SQL: SELECT * FROM `pa_category` WHERE ( pid=1 ) ORDER BY cid DESC  [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=2 ) ORDER BY cid DESC  [ RunTime:0.000351s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=3 ) ORDER BY cid DESC  [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=4 ) ORDER BY cid DESC  [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=5 ) ORDER BY cid DESC  [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=6 ) ORDER BY cid DESC  [ RunTime:0.000322s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 126 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=2 )  [ RunTime:0.000332s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001391s ]
+
+[ 2016-02-14T07:37:56+08:00 ] 66.249.73.220 /index.php/page/index/name/qyyjd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002937s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.002606s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'qyyjd' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'qyyjd' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000461s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 9 ) ORDER BY id DESC  [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002307s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'qyyjd') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000388s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2016-02-14T08:10:39+08:00 ] 66.249.73.220 /index.php/page/index/name/lnzhg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003141s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.004487s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'lnzhg' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'lnzhg' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000514s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 10 ) ORDER BY id DESC  [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003410s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'lnzhg') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000402s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-02-14T08:27:01+08:00 ] 66.249.73.228 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003031s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003424s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( `position` = 'index' ) ORDER BY sort DESC  [ RunTime:0.000767s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000488s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000883s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\769e70f2e46f34ceb60619bbda5e4691.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2016-02-14T10:54:17+08:00 ] 66.249.73.175 /index.php/Product/index/p/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003046s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.004283s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002192s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002814s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000459s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002422s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002210s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000757s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_images` [ RunTime:0.004527s ]
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 722 ) LIMIT 1   [ RunTime:0.000540s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 720 ) LIMIT 1   [ RunTime:0.000416s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 725 ) LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 721 ) LIMIT 1   [ RunTime:0.000425s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 724 ) LIMIT 1   [ RunTime:0.000396s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2016-02-14T12:05:24+08:00 ] 180.76.15.138 /index.php/product/read/id/202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003619s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.004880s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 202 ) LIMIT 1   [ RunTime:0.000745s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T12:05:25+08:00 ] 180.76.15.25 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003500s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002669s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002253s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002561s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003652s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002580s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000400s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2016-02-14T13:12:23+08:00 ] 180.76.15.150 /index.php/product/read/id/196
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003749s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003674s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 196 ) LIMIT 1   [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T15:12:36+08:00 ] 66.249.73.212 /index.php/page/index/name/dsys
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003264s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.004298s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` = 'dsys' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000578s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'zh-cn' ) AND ( `unique_id` <> 'dsys' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000504s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = 4 ) ORDER BY id DESC  [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002945s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'dsys') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001142s ]
+
+[ 2016-02-14T16:24:16+08:00 ] 66.249.73.220 /index.php/news/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003196s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.003350s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003029s ]
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.002994s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000651s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_news` [ RunTime:0.002747s ]
+SQL: SELECT n.id,n.cid,n.title,n.summary,n.update_time,n.click,n.image_id,c.name as cname,n.published FROM pa_news n INNER JOIN pa_category c on c.cid=n.cid  WHERE ( n.status = 1 ) AND ( n.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003413s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'news') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+NOTIC: [8] Undefined index: limit D:\wamp\www\zjksty.com\include\Library\Think\Template\TagLib\Weblock.class.php 第 113 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000865s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 6 行.
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002401s ]
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 120 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid=0 )  [ RunTime:0.000443s ]
+SQL: SELECT * FROM `pa_category` WHERE ( pid=1 ) ORDER BY cid DESC  [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=2 ) ORDER BY cid DESC  [ RunTime:0.000370s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=3 ) ORDER BY cid DESC  [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=4 ) ORDER BY cid DESC  [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=5 ) ORDER BY cid DESC  [ RunTime:0.000363s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT * FROM `pa_category` WHERE ( pid=6 ) ORDER BY cid DESC  [ RunTime:0.000398s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: cid D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [2] Missing argument 1 for Think\Model::limit(), called in D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php on line 126 and defined D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1630 行.
+NOTIC: [8] Undefined variable: offset D:\wamp\www\zjksty.com\include\Library\Think\Model.class.php 第 1631 行.
+SQL: SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid= )  [ RunTime:0.000312s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `pa_category` WHERE ( lang='zh-cn'  AND type='n' AND pid= ) 
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\b382c5913c8c3a964a30800cdc0a0419.php 第 126 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2016-02-14T16:31:35+08:00 ] 180.76.15.162 /index.php/page/index/name/vod
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003701s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.003820s ]
+SQL: SELECT * FROM `pa_page` WHERE ( `lang` = 'en-us' ) AND ( `unique_id` = 'vod' ) AND ( `display` = 1 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `lang` = 'en-us' ) AND ( `unique_id` <> 'vod' ) AND ( `display` = 1 ) AND ( `parent_id` = 0 ) ORDER BY id DESC  [ RunTime:0.000452s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `parent_id` = null ) ORDER BY id DESC  [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002647s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'vod') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000748s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2016-02-14T16:42:36+08:00 ] 66.249.73.166 /index.php/product/eread/id/129
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003014s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003141s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 129 ) LIMIT 1   [ RunTime:0.000517s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T16:42:36+08:00 ] 66.249.73.166 /index.php/product/eindex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000129s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003298s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003886s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003609s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002917s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003517s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.004378s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000486s ]
+ERR: 模板不存在:./Application/Home/View/default/Product/eindex.html
+
+[ 2016-02-14T16:43:44+08:00 ] 66.249.73.212 /index.php/Register/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003064s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_nationality` [ RunTime:0.002466s ]
+SQL: SELECT * FROM `pa_nationality`  [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `pa_city` [ RunTime:0.003100s ]
+SQL: SELECT * FROM `pa_city` WHERE ( parentid=0 ) ORDER BY sort asc  [ RunTime:0.001197s ]
+SQL: SELECT * FROM `pa_city` WHERE ( parentid=12 ) ORDER BY sort asc  [ RunTime:0.000769s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000588s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000959s ]
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 5 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 6 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined variable: site D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\5a76f37f4aceb9d932006e564be47e30.php 第 542 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2016-02-14T16:45:07+08:00 ] 66.249.73.228 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003480s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002899s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003088s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002915s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) LIMIT 1   [ RunTime:0.000516s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003310s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'zh-cn' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003228s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SHOW COLUMNS FROM `pa_images` [ RunTime:0.004370s ]
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 722 ) LIMIT 1   [ RunTime:0.000447s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 720 ) LIMIT 1   [ RunTime:0.000421s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 725 ) LIMIT 1   [ RunTime:0.000420s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 721 ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 8 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 9 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 10 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+SQL: SELECT `savepath` FROM `pa_images` WHERE ( `id` = 724 ) LIMIT 1   [ RunTime:0.000566s ]
+NOTIC: [8] Undefined offset: 11 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 12 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 13 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 14 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 15 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 16 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 17 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 18 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 19 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 20 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 21 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 23 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 24 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 25 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 26 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 27 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 28 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 29 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 30 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 31 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 32 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 33 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 34 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 35 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 36 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 37 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 38 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+NOTIC: [8] Undefined offset: 39 D:\wamp\www\zjksty.com\Application\Common\Common\function.php 第 247 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-02-14T17:08:56+08:00 ] 66.249.73.228 /index.php/message/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003197s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_page` [ RunTime:0.004420s ]
+SQL: SELECT `unique_id`,`page_name` FROM `pa_page` WHERE ( `display` = 1 ) AND ( `lang` = 'zh-cn' ) ORDER BY id DESC  [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.003022s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'zh-cn' ) AND ( (`position` = 'message') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000383s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000470s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\ef6f41eceba673c7cd7936a8ca6a2b03.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\ef6f41eceba673c7cd7936a8ca6a2b03.php 第 6 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2016-02-14T20:35:36+08:00 ] 180.76.15.147 /index.php/product/read/id/Baofengji/Baofengji-11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004119s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.004093s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000486s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T20:35:37+08:00 ] 180.76.15.34 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003746s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003100s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.002838s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003023s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002208s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000744s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-02-14T21:42:35+08:00 ] 180.76.15.24 /index.php/product/read/id/240
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003571s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003659s ]
+SQL: SELECT * FROM `pa_product` WHERE ( `id` = 240 ) LIMIT 1   [ RunTime:0.000439s ]
+NOTIC: [8] Undefined index: m D:\wamp\www\zjksty.com\include\Common\functions.php 第 885 行.
+
+[ 2016-02-14T21:42:35+08:00 ] 180.76.15.34 /index.php/product/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003523s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\zjksty.com\include\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002568s ]
+SQL: SHOW COLUMNS FROM `pa_category` [ RunTime:0.003003s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.003416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `pa_product` [ RunTime:0.002840s ]
+SQL: SELECT p.id,p.cid,p.image_id,p.price,p.psize,p.title,p.summary,p.update_time,p.click,c.name as cname FROM pa_product p INNER JOIN pa_category c on c.cid=p.cid  WHERE ( p.status = 1 ) AND ( p.lang = 'en-us' ) ORDER BY id desc LIMIT 0, 120   [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `pa_ad` [ RunTime:0.002381s ]
+SQL: SELECT * FROM `pa_ad` WHERE ( `lang` = 'en-us' ) AND ( (`position` = 'product') OR (`position` = 'all') ) ORDER BY sort DESC  [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 169 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\zjksty.com\include\Library\Think\Template.class.php 第 170 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000390s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 5 行.
+NOTIC: [8] Undefined variable: info D:\wamp\www\zjksty.com\Application\Runtime\Cache\Home\874234af2d0037f6a82874b968469ef5.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+

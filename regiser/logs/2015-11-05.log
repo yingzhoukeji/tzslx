@@ -1,0 +1,7 @@
+[2015-11-05 16:09:55][debug] begin notify
+[2015-11-05 16:09:55][debug] call back test:{"appid":"wx161f19ac48b1f2f3","attach":"\u9a6c\u62c9\u677e\u62a5\u540d","bank_type":"CFT","cash_fee":"6000","fee_type":"CNY","is_subscribe":"N","mch_id":"1268067601","nonce_str":"c9o8f6rhjww5sej5n5a1zi61glkrn9n3","openid":"ouN6_s_6n20LpD_UL-HmzKV3B6uw","out_trade_no":"126806760120151105160919","result_code":"SUCCESS","return_code":"SUCCESS","sign":"6F9A78AD5CEBB6AAFB3724FDC32555D0","time_end":"20151105160955","total_fee":"6000","trade_type":"JSAPI","transaction_id":"1007450869201511051465757979"}
+[2015-11-05 16:09:56][debug] query:{"appid":"wx161f19ac48b1f2f3","attach":"\u9a6c\u62c9\u677e\u62a5\u540d","bank_type":"CFT","cash_fee":"6000","fee_type":"CNY","is_subscribe":"N","mch_id":"1268067601","nonce_str":"s9cBR84BW5EP5Zc3","openid":"ouN6_s_6n20LpD_UL-HmzKV3B6uw","out_trade_no":"126806760120151105160919","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"12E00904F909D25C7602578C176C9BF6","time_end":"20151105160954","total_fee":"6000","trade_state":"SUCCESS","trade_type":"JSAPI","transaction_id":"1007450869201511051465757979"}
+[2015-11-05 16:09:56][debug] call back test:订单查询成功
+[2015-11-05 16:09:56][debug] call back test:未入库
+[2015-11-05 16:09:56][debug] call back test sql:UPDATE pa_marathon SET ispay =1,transaction_id="1007450869201511051465757979",out_trade_no="126806760120151105160919" WHERE openid ="ouN6_s_6n20LpD_UL-HmzKV3B6uw"
+[2015-11-05 16:09:56][debug] call back test:入库成功

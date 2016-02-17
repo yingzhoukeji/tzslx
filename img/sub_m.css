@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+/* .inner.sub_ct {width:81.25%;} */
+.sub_ct {padding:40px 0;}
+.sub_ct h2 {margin-bottom:20px;}
+.sub_ct h2 img {height:28px;}
+.sub_l, .sub_r {float:none; width:100%;}
+
+/* sub visual */
+.sv { height:150px; padding-top:55px; }
+.sv img {height:35px;}
+.sv_line {margin-top:20px;}
+/* snb */
+.snb { width:100%; border-right:0; }
+.snb li {box-sizing:border-box;}
+.snb a {height:43px; line-height:43px; border-left:0; font-size:1em;}
+
+/* 역사 */
+.histr_intro {padding:70px 0 0 0;}
+.histr_intro h2 {margin-bottom:20px;}
+.histr_intro h2 img {height:35px;}
+.histr_ct {padding-top:60px; padding-bottom:120px; background-size:1px 120px; }
+.histr_left {width:47.5%;}
+.histr_right {width:47.5%;}
+.go_arrow {margin-top:40px;}
+.histr_abs {display:none;}
+.temp_br {display:none;}
+.histr_year img {height:15px;}
+.histr_txt h3 {margin-top:5px;}
+.histr_tit_line1 img {height:22px}
+.histr_tit_line2 img {height:50px}
+.histr_line {margin:20px 0;}
+.histr_body {margin-top:20px;}
+#history01 .histr_img,
+#history02 .histr_img,
+#history03 .histr_img,
+#history04 .histr_img,
+#history05 .histr_img,
+#history06 .histr_img {padding-top:0;}
+#history01 .histr_txt, 
+#history02 .histr_txt, 
+#history03 .histr_txt, 
+#history04 .histr_txt, 
+#history05 .histr_txt {padding-top:5%; margin-top:60px;}
+#history06 .histr_txt {padding-top:0;}
+#history_founder {padding-top:60px;}
+.founder_name h3 {font-size:1.875em; line-height:1em; }
+.founder_name h3 span {font-size:14px;}
+.founder_name h3 {margin-right:0px; line-height:1.5em;}
+.founder_name h3:first-child {margin-right:25px;}
+.founder_name h3 span {display:inline-block; margin-right:8px;}
+.histr_left .histr_slider .bx-controls-direction {text-align:left;}
+.histr_right .histr_slider .bx-controls-direction {text-align:right;}
+.histr_left .histr_slider .bx-controls-direction a {margin-right:5px; }
+.histr_right .histr_slider .bx-controls-direction a {margin-left:5px; }
+.histr_slider .bx-controls-direction a { 
+	width:35px; height:36px; 
+	position:relative; 
+	text-indent:99999px; 
+	display:inline-block; 
+	top:0; 
+	margin-top:10px; 
+	background-size:70px auto;
+}
+.histr_left .histr_slider .bx-prev, .histr_left .histr_slider .bx-next,
+.histr_right .histr_slider .bx-prev, .histr_right .histr_slider .bx-next {right:auto; left:auto;}
+.histr_slider .bx-prev, .histr_slider .bx-prev:hover {background-position:0 0;}
+.histr_slider .bx-next, .histr_slider .bx-next:hover {background-position:-35px 0;}
+/* 방문안내 */
+.fee_list li {
+	box-sizing:border-box;
+	width:31.66%; height:220px;
+	margin-right:2.5%;
+	margin-bottom:2.5%;
+	padding:5%;
+}
+.fee_list h3 {font-size:1.25em; line-height:1.2em; font-weight:600;}
+/* 관람유의사항 */
+.visit_noti {margin-top:40px;}
+.visit_noti h3 {height:45px; line-height:45px; font-size:1em; font-weight:600;}
+.visit_noti li, .visit_noti li:first-child {
+	box-sizing:border-box;
+	width:20%; padding:4% 2% 0 2%;
+}
+.visit_noti li img {
+	width:50%;
+	margin-bottom:15%;
+}
+/* 교통안내 */
+.loc_train { margin:30px auto 40px auto; }
+.loc_how li { height:auto; margin-bottom:20px; line-height:1.71em; background:transparent; border-radius:0; -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0;}
+.loc_how span { 
+	float:none;
+	height:35px; line-height:35px;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-o-border-radius:0;
+	border-top-right-radius:20px;
+}
+.loc_how p {background:#fff; padding:10px;}
+.normal_tt th {font-size:1em; line-height:1.5em; padding:0 5px; letter-spacing:-0.05em;}
+.normal_tt td {height:45px;}
+/* 개인체험 */
+.exp01 {background-size:50% auto;}
+.exp01_txt {width:49%;}
+.exp01_txt li {	padding-left:65px; position:relative;}
+.exp01_txt .label {	display:block; width:65px; position:absolute; left:0; top:0;}
+.exp_list01 {margin-top:40px;}
+.exp_list01 li {margin-top:20px; padding:3.5%;}
+.exp_list01 .desc {padding:0; width:61%;}
+.exp_list01 .price {margin-bottom:3.5%;}
+/* 단체체험 */
+.exp_feature li {
+	margin-top:7%;
+}
+.exp_feature span {
+	width:13.5%; height:0; 
+	padding-bottom:13.5%;
+	margin-right:0;
+	border:6px solid #0172BE; 
+	background:transparent; 
+	text-align:left; 
+}
+.exp_feature span img {padding:0; position:absolute; width:55%; top:23%; left:25%; }
+.exp_feature h4, .exp_feature p {width:80%; float:right; text-align:justify;}
+.exp_feature h4 { font-size:1.4em; line-height:1.5em; padding-top:0; padding-bottom:10px;}
+.exp_info { height:auto; background-size:45% auto; background-position:right 40px;}
+.exp_price, .exp_list02 {margin-bottom:40px;}
+.exp_price li,.exp_price li:first-child {box-sizing:border-box; width:50%; padding:5% 4.8%;}
+.exp_list02 li {box-sizing:border-box; width:50%; margin-bottom:2.5%;}
+.exp_list02 .desc {box-sizing:border-box; padding:0 5%; padding-top:5.5%;}
+.exp_list02 .desc h5, .exp_list02 .desc p {padding:0;}
+/* 인증프로그램 */
+.exp_nature {background-size:100px auto;}
+.exp_tt {max-width:700px; width:calc(100% + 40px); width:-webkit-calc(100% + 40px); width:-moz-calc(100% + 40px); width:-o-calc(100% + 40px); margin-left:-40px;}
+/* 수목원안내도 */
+.prevw_header {border-bottom:0;}
+.prevw_cate {padding:15px;}
+.prevw_map {float:none; width:100%; height:0; padding-bottom:59.69738651994498%; border-right:0; background-size:cover;}
+.prevw_map .btn_zoom {width:56px; height:56px; left:25px; top:25px; }
+.prevw_map .map_idcator {width:16px; height:30px; margin-left:-8px; margin-top:-30px; background-size:16px auto;}
+.prevw_area {float:none ;width:100%; height:auto;}
+.prevw_name li, .prevw_name li.br0 {box-sizing:border-box; width:16.66666666666667%; height:30px; border-right-width:1px;}
+.prevw_name li:nth-of-type(6n) {border-right-width:0;}
+.prevw_name a, .prevw_name .mt_line a {padding:0 3px; height:29px; line-height:29px;}
+.prevw_ct {padding:35px 30px; text-align:justify;}
+.prevw_ct .photo {margin-left:30px; margin-bottom:20px; width:42%;}
+.prevw_ct h4 img {height:25px;}
+/* 식물도감 */
+.plant_list li {
+	width:31.45%; height:auto;
+	box-sizing:border-box;
+	margin-right:2.825%;
+	margin-bottom:2.825%;
+}
+.plant_list li:nth-of-type(3n+1) {clear:left;}
+.plant_list .photo { padding-bottom:65.028%; height:0; }
+.plant_list img { position:absolute; width:100%; height:100%; left:0; top:0; }
+.plant_list .photo .mover { background-size:cover; }
+.plant_list .name { font-size:1em; line-height:1.5em; }
+/* 아침고요 이모저모 */
+.story_road { padding:0; margin-top:40px; margin-bottom:40px; background-position:center; background-size:cover; height:auto;}
+.story_road .sub_ct {width: 65%; max-width:640px; padding:60px 0; height:auto; }
+.story_road .btn_more {margin-top:40px;}
+.story_road .btn_more a {height:40px; line-height:40px; width:50%; max-width:200px;}
+/* SNS */
+.sns_left {width:62%;}
+.sns_right {width:35%;}
+
+.sns_insta li {position:relative; width:32%; height:0; padding-bottom:32%; margin-right:2%; margin-bottom:2%; box-sizing:border-box;}
+.sns_insta img {display:block; position:absolute; left:0; top:0;}
+.insta_notice {margin-top:10px; padding-right:95px; font-size:0.86em; line-height:1.45em;}
+.sns_ct {margin-bottom:20px;}
+.sns_ct li {padding:3.5% 0;}
+.sns_ct .photo img {width:60px; height:55px;}
+.sns_ct .txt {
+	width:calc(97% - 60px);
+	width:-webkit-calc(97% - 60px);
+	width:-moz-calc(97% - 55px);
+	width:-o-calc(97% - 55px);
+}
+.sns_ct h5 {margin-bottom:3%;}
+.sns_right .list-pager > a:first-child,
+.sns_right .list-pager > a:last-child {display:none;}
+.season_go {margin-top:40px;}
+.season_go a {padding:15px 45px 15px 45px;}
+/* 아침고요사계절 */
+.season_ct {padding-top:100px; padding-bottom:100px; background-size:1px 550px;}
+.season_ct h2 {margin-bottom:20px;}
+.season_ct h2 img {height:65px; }
+.season_ct .go_arrow {margin-top:35px; margin-bottom:0;}
+.ss_event_col02 .ss_event_item {width:48.5%; margin-left:3%;}
+.ss_event_col03 .ss_event_item, .ss_event_upto_col03 .ss_event_item {width:31.33%; margin-left:3%;}
+.ss_event_item .photo {margin-bottom:25px;}
+.ss_event_item h4 {font-size:1.14em; line-height:1.375em;}
+.ss_gall_wrap {height:150px; margin-top:65px;}
+.ss_gall_header {width:230px; height:150px;}
+.ss_gall_header p { padding:20px 25px 20px 0; font-size:1.125em; line-height:1.5em;}
+.ss_gall_ct {margin-left:230px; height:150px;}
+.swiper-slide.ss_gall_item,.ss_gall_item  {width:150px; height:150px;}
+.ss_gall_nav {left:230px; margin-left:-115px; top:90px;}
+/* 아침고요사계절 팝업창 */
+/*.common_pop .pop_wrap {
+	width:100%; height:auto;
+	left:0; margin-left:0;
+}*/
+.common_pop .pop_wrap, .gall_pop .pop_wrap {height:auto; width:100%; left:0; margin-left:0; margin-top:-27.5%;}
+.gall_pop .pop_wrap {margin-top:-32.5%;}
+.plant_pop .pop_wrap {margin-top:-37%;}
+.common_pop .pop_ct {padding:30px 25px;}
+.common_pop .nav a {width:40px; height:42px; margin-top:-21px;}
+.common_pop .pop_close { width:40px; height:40px; right:15px; top:-20px; }
+.common_pop .pop_txt {margin-top:30px; height:auto;}
+/* 사이트링크 */
+.link_url a {font-size:1em;}
+.link_site {width:400px; margin:0 auto;}
+.link_site li {padding:0 20px; width:160px; height:auto; background:transparent; display:table-row; margin:0;}
+.link_site a {display:table-cell; width:160px; height:150px; border:5px solid #0172BE; border-radius:80px; margin:0 auto; vertical-align:middle;}
+.link_site img {width:40px; margin-bottom:5px; margin-top:-10px;}
+.link_col li, .link_col li.last {box-sizing:border-box; width:33.3333%; display:table;}
+.link_col a {display:table-cell; min-width:100%; height:auto; padding-top:0; vertical-align:middle;}
+/* 강연 */
+.lectr_wrap h3 {margin-top:40px;}
+.lectr_intro {font-size:0.92em; line-height:1.71em;}
+.lectr_type {display:table-row;}
+.lectr_type li {float:none; display:table-cell; width:50%; height:auto; border:1px solid #bcd3be; overflow:hidden;}
+.lectr_type li:first-child { border-right:0;}
+.lectr_type img {height:auto;}
+.lectr_type .txt h4 {margin-bottom:8px; font-size:1.14em;}
+.lectr_spk .photo {width:49%;}
+.lectr_spk .photo span {width:90px;}
+.spk_career{width:49%;}
+.spk_career dt {font-size:1.14em;}
+/* 원내매장 추가 : 16.1.11 by DH wookju */
+.store_cate {width:auto; text-align:center; margin-bottom:40px;}
+.store_cate li {display:inline-block; float:none; width:120px; height:120px; background:#fff; margin:0 30px; border-radius:65px; border:5px solid #bbb; }
+.store_cate li.on, .store_cate li:hover {border-color:#0172BE; }
+.store_cate li a {padding-top:10px; height:110px;}
+.store_cate span {width:70px; height:70px; background-size:280px auto;}
+	.store_cate .cafe {background-position:-140px 0;}
+	.store_cate .gift {background-position:-210px 0;}
+	.store_cate .on .food, .store_cate a:hover .food {background-position:0 -70px;}
+	.store_cate .on .cafe, .store_cate a:hover .cafe {background-position:-140px -70px;}
+	.store_cate .on .gift, .store_cate a:hover .gift {background-position:-210px -70px;}
+
+@media all and (max-width:1099px) {
+	.m_popup {display:none;}
+}
+@media all and (max-width:767px) {
+	.label_list li {margin-bottom:10px;}
+	/* sub visual */
+	.sv { height:85px; padding-top:55px; }
+	.sv img {height:28px;}
+	.sv_line, .sv p {display:none;}
+	/* 역사 */
+	.go_arrow {display:none;}
+	.scroll_nav_slt {display:block;}
+	.histr_ct {padding-top:10%; background-size:1px 130px;}
+	.histr_intro + .histr_ct {padding-top:20px;}
+	.histr_left, .histr_right {width:100%; float:none;}
+	#history01 .histr_txt, #history02 .histr_txt,  #history03 .histr_txt, 
+	#history04 .histr_txt, #history05 .histr_txt {padding-top:0; margin-top:0;}
+	.histr_img > img {margin-bottom:15px;}
+	.histr_left .histr_body, .histr_right .histr_body {text-align:justify;}
+	.histr_left .histr_year, .histr_left h3 {text-align:left;}
+	.histr_left .histr_line {float:none;}
+	#founder_name h3 {margin-top:0;}
+	.histr_left .histr_slider .bx-controls-direction {text-align:right;}
+	.histr_left .histr_slider .bx-controls-direction a {margin-right:0px; margin-left:5px;}
+	/* 방문안내 */
+	.fee_list li, .fee_list li.mr0, .fee_list li.mb0 {
+		width:48.5%; margin-right:3%;
+		height:137px;
+		padding:22px 4.5%;
+		font-size:0.875em;
+		background-size:auto 60%;
+		letter-spacing:-0.03em;
+	}
+	.fee_list li:nth-of-type(2n) {margin-right:0;}
+	.fee_list h3 span {font-size:0.875em;}
+	.fee_line {margin:15px 0; width:18px; }
+	.fee_contact p:first-child {padding-top:0; line-height:1.5em;}
+	.fee_tel {font-size:1.75em;}
+	.fee_exp {
+		margin-top:15px;
+		height:auto;
+		padding:20px; line-height:1.7em;
+		border-radius:0;
+	}
+	.fee_exp a {background-position:right 88%; padding:0; background-size:12px;}
+	.fee_cate {padding-left:8px; text-indent:-8px; font-size:0.92em;}
+	/* 교통안내 */
+	.loc_car .addr {padding:15px 15px 8px 32px; text-indent:-18px;}
+	.loc_car .addr span {position:relative; right:auto; top:auto; text-align:right;}
+	.loc_train {width:100%;}
+	.loc_root .root01, .loc_root .root02 {font-size:1em; height:18px; line-height:18px; }
+	.loc_root .root01 {padding-bottom:2.27%;}
+	.loc_root .root02 {padding-top:1.5%; }
+	.normal_tt td {height:40px;}
+	/* 개인체험 */
+	.exp01 {background:#fff;}
+	.exp01_txt {width:100%;}
+	.exp01_txt li {padding-left:75px;}
+	.exp01_txt li .label {width:75px;}
+	.exp01_txt li .label::before {content:'- ';}
+	.exp01 p img {width:100%;}
+	/* 단체체험 */
+	.exp_info {background:transparent;}
+	.exp_info .exp_photo img {width:100%;}
+	.exp_list02 .desc { padding-top:4.5%;}
+	/* 인증프로그램 */
+	.exp_tt.normal_tt col {width:auto;}
+	.exp_tt.normal_tt col.time {width:125px;}
+	/* 수목원안내도 */
+	.prevw_wrap {border:0;}
+	.prevw_map_m {display:block; padding-top:40px;}
+	.prevw_header {margin-bottom:40px;}
+	.prevw_area {background:transparent;}
+	.prevw_map {display:none;}
+	.prevw_cate {float:left; width:52%; height:auto; background:#ddd; padding:0;}
+	.prevw_cate ul {width:100%; height:auto;}
+	.prevw_cate li, .prevw_cate .prev, .prevw_cate .on, .prevw_cate .next {float:left; width:33.333%;text-align:center;height:auto; position:relative; margin:0; left:auto; right:auto;}
+	.prevw_cate a,.prevw_cate .prev a, .prevw_cate .next a {font-size:1em; color:#555; padding:0; background:transparent;}
+	.prevw_cate a {border:1px solid #ccc; border-left:0; height:41px; line-height:41px;}
+	.prevw_cate li:first-child a {border-left:0; border-left:1px solid #ccc;}
+	.prevw_cate .on a {font-size:1em; font-weight:600; color:#fff; background:#555; border-color:#555;}
+	.prevw_name {display:none;}
+	.prevw_name_m {display:block; float:right; width:42%;}
+	.prevw_ct {padding:0;}
+	/* 아침고요이모저모 : SNS */
+	.sns_left {float:none; width:100%;}
+	.sns_right {float:none; width:100%; margin-top:40px;}
+	.season_go {margin-top:60px; margin-bottom:50px;}
+	.season_go a {padding:15px 60px 15px 60px;}
+	.insta_notice {margin-top:5px;}
+	.sns_ct {border-top:1px solid #e5e5e5;}
+	.sns_ct li, .sns_ct li:first-child {padding:15px 0;}
+	.sns_ct .photo img {width:85px; height:78px;}
+	.sns_ct .txt {
+		width:calc(100% - 95px);
+		width:-webkit-calc(100% - 95px);
+		width:-moz-calc(100% - 95px);
+		width:-o-calc(100% - 95px);
+	}
+	.sns_ct h5 {background-size:15px; line-height:18px; margin-bottom:5px; padding-left:20px;}
+	.sns_ct .txt p {font-size:0.92em; line-height:1.5em; height:4.5em;}
+	.sns_right .list-pager > a:first-child,
+	.sns_right .list-pager > a:last-child {display:inline-block;}
+	/* 사이트링크 */
+	.link_url a span {display:none;}
+	.link_col li, .link_col li.last {height:50px;}
+	.link_arb_wrap h3 {margin-top:40px;}
+	/* 아침고요사계절 */
+	.season_ct {padding-top:0; background-size:1px 420px; /* display:none; */}
+	.season_ct#winter, .season_ct#autumn {background-size:1px 360px;}
+	.ss_pager {display:block;}
+	/* .ss_event_item {float:none; display:none; 스크립트삽입후삭제} */
+	.ss_event_wrap {overflow:initial;}
+	.ss_event_item:hover {
+		transform:translate(0,0);
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-o-transform:translate(0,0);
+	}
+	.ss_event_col02 .ss_event_item,
+	.ss_event_col03 .ss_event_item,
+	.ss_event_upto_col03 .ss_event_item {width:100%; margin-left:0; margin-bottom:30px;}
+	.ss_event_item:first-child {display:block;}
+	.ss_event_col03 .ss_event_item .photo,
+	.ss_event_upto_col03 .ss_event_item .photo { position:relative; height:0; padding-bottom:69%; overflow:hidden; }
+	.ss_event_col03 .ss_event_item .photo img,
+	.ss_event_upto_col03 .ss_event_item .photo img {position:absolute; left:0; top:0;}
+	.ss_gall_wrap {height:auto; border-bottom:0; }
+	.ss_gall_header, .ss_gall_nav {display:none;}
+	.ss_gall_ct {margin-left:0; height:auto; overflow:hidden;}
+	.swiper-wrapper.ss_gall {width:100%; display:block;}
+	.swiper-slide.ss_gall_item {margin-right:0; margin-bottom:1px; width:25%; padding-bottom:25%; height:0;}
+	.ss_gall_item p {
+		position:absolute; left:0; top:0;
+		width:100%; height:100%;
+		width:calc(100% - 1px);
+		width:-webkit-calc(100% - 1px);
+		width:-moz-calc(100% - 1px);
+		width:-o-calc(100% - 1px);
+	}
+	.ss_gall_item img {
+		opacity:0.8;
+		filter:alpha(opacity=80);
+		-ms-filter:alpha("opacity=80");
+	}
+	.ss_gall_item:hover span {display:none;}
+	/* 원내매장 추가 : 16.1.11 by DH wookju */
+	.store_cate li {margin:0 10px; }
+	.store_tab {display:none;}
+	.store_tab_m {display:block;}
+	.store_ct .photo {float:none; width:100%; max-width:470px; margin:0 auto;}
+	.store_ct .info{float:none; width:100%; padding-top:30px;}
+	.store_ct h4 {font-size:1.4em; line-height:1.3em; margin-bottom:20px;}
+	.store_ct .txt {margin-bottom:10%;}
+}
+@media all and (max-width:568px) {
+	.sub_ct h2 img {height:20px;}
+	h3.ct_idx {font-size:1.14em;}
+	h3.ct_idx_l {font-size:1.375em;}
+	.label_list li {padding-left:40px;}
+	.label_list h5 {font-size:1.14em; line-height:1.2em; top:3px;}
+	/* 관람시 유의사항 */
+	.visit_noti {margin-top:20px;}
+	.visit_noti ul {display:table; width:100%; }
+	.visit_noti li, .visit_noti li:first-child {display:table-row; float:none; width:100%; height:auto; }
+	.visit_noti div {display:table-cell; vertical-align:middle; padding:5%; border-bottom:1px solid #ebebeb;}
+	.visit_noti li div:first-child {padding-right:0; width:50px;}
+	.visit_noti li img { float:left; width:50px; margin-bottom:0; margin-right:5%; }
+	/* 교통안내 */
+	.loc_car .addr span img {width:120px;}
+	.loc_train ul {padding:4.5%;}
+	.loc_how span img {width:10px;}
+	.loc_how span {width:110px; height:30px; line-height:30px; padding:0 10px;}
+	.bus_tt_size01, .bus_tt_size02 {width:100%; margin-bottom:15px;}
+	.bus_tt_size01:first-child, .normal_tt_mid {margin-left:0; margin-right:0;}
+	.normal_tt th {letter-spacing:0; height:auto; padding:10px;}
+	.normal_tt td {height:30px; font-size:0.96em;}
+	/*개인체험*/
+	.exp_list01 li {background:transparent; padding:0;}
+	.exp_list01 .img {width:100%; height:180px;}
+	.exp_list01 .img img {height:auto; margin-top:-18%;}
+	.exp_list01 .desc {background:#fff; padding:5%; width:90%; clear:both;}
+	.exp_list01 h4 {font-size:1.4em; line-height:1.5em; font-weight:600;}
+	/* 단체체험 */
+	.exp_feature li {margin-top:30px;}
+	.exp_feature span {width:10%; padding-bottom:0; height:auto; border:0;}
+	.exp_feature span img {position:relative; left:auto; top:auto; width:80%;}
+	.exp_feature h4 {width:90%; font-size:1.2em; text-align:left;}
+	.exp_feature p {clear:both; float:none; width:100%; margin-top:10px;}
+	.exp_price h5 {font-size:1em;}
+	.exp_list02 .desc h5 {font-size:1em; font-weight:600; line-height:1.5em;}
+	.exp_list02 img {min-height:65px;}
+	/* 식물도감 */
+	.plant_list li, .plant_list li.col03_last {width:48%; margin-left:4%; margin-right:0; margin-bottom:4%;}
+	.plant_list li:nth-of-type(2n+1) {margin-left:0; clear:left;}
+	.plant_list li:nth-of-type(3n+1) {clear:none;}
+	.plant_list .photo {padding-bottom:50%;}
+	.plant_list .photo img {height:auto; margin-top:-6%;}
+	.plant_list .name {padding:5px 0;}
+	/* 사이트링크 */
+	.link_site {width:270px; margin:0 auto;}
+	.link_site li {padding:0 5px; width:125px; height:auto; background:transparent; display:table-row; margin:0;}
+	.link_site a {width:125px; height:115px; border:4px solid #0172BE; border-radius:70px;}
+	.link_site img {width:30px; margin-top:0;}
+	.link_col li, .link_col li.last {width:50%;}
+	.link_arb_wrap h3 {margin-top:30px;}
+
+	/* 원내매장 추가 : 16.1.11 by DH wookju */
+	.store_cate {margin-bottom:30px;}
+	.store_cate li {width:70px; height:70px; border-radius:50px; border-width:4px; margin:0 10px;}
+	.store_cate li a {padding-top:3px; height:67px; font-size:1em;}
+	.store_cate span {width:40px; height:40px; background-size:160px auto;}
+		.store_cate .cafe {background-position:-80px 0;}
+		.store_cate .gift {background-position:-120px 0;}
+		.store_cate .on .food, .store_cate a:hover .food {background-position:0 -40px;}
+		.store_cate .on .cafe, .store_cate a:hover .cafe {background-position:-80px -40px;}
+		.store_cate .on .gift, .store_cate a:hover .gift {background-position:-120px -40px;}
+	.store_ct dt {float:none; width:100%; margin-top:10px; padding:0;}
+	.store_ct dd {float:none; width:100%;}
+}
+
+@media all and (max-width:480px) {
+	/* SNB */
+	.snb_diff li {width:21.5%}
+	.snb_diff li:first-child {width:35.5%;}
+	/* 개인체험 */
+	.exp_list01 .img {height:120px;}
+	/* 단체체험 */
+	.exp_price p {clear:left;}
+	.exp_list02 li { width:48.5%; height:auto; border-left-width:1px; margin-bottom:3%;}
+	.exp_list02 li:nth-of-type(2n) {margin-left:3%;}
+	.exp_list02 .img {position:relative; width:100%; height:86px; overflow:hidden; float:none;}
+	.exp_list02 img {position:absolute; max-width:200%; width:100%; left:0; top:50%; margin-top:-34%;}
+	.exp_list02 .desc {float:none; width:100%; padding-bottom:5%;}
+	.exp_list02 .desc h5 {margin-bottom:0;}
+	.exp_list02 .desc p {text-align:right;}
+	/* 인증프로그램 */
+	.exp_nature {background-size:90px auto; background-position:right 10px;}
+	.exp_tt.normal_tt col.time {width:110px;}
+	.exp_tt .place {display:none;}
+	.exp_tt .program {text-align:left; line-height:1.5em; padding:5px 10px;}
+	.exp_tt span {display:inline-block;}
+	.box_gray h5 {font-size:1.14em;}
+	/* 수목원안내도 */
+	.inner.prevw_map_m {width:100%; padding-top:0;}
+	.prevw_map_m + .sub_ct {padding-top:15px;}
+	.prevw_header {margin-bottom:25px;}
+	.prevw_cate {float:none; width:100%; margin-bottom:15px;}
+	.prevw_cate a {height:73px; line-height:73px;}
+	.prevw_name_m {float:none; width:100%;}
+	.prevw_ct .photo {width:100%; float:none; margin:0; margin-bottom:5px;}
+	.prevw_ct h4 {margin-bottom:15px;}
+	/* 식물도감 */
+	.plant_list {padding-top:10px;}
+	.plant_list .name {font-size:0.92em; padding:5px 3px;}
+	.plant_list .photo { padding-bottom:65.028%;}
+	.plant_list .photo img {margin-top:0;}
+	/* 이모저모 */
+	.story_road .sub_ct {width: 84.375%;}
+	.insta_notice {padding-right:0; overflow:hidden;}
+	.insta_notice span {position:relative; float:right; margin-top:5px;}
+	.insta_notice p {clear:both; background-size:20px; padding-left:25px;}
+	.sns_right {margin-top:30px;}
+	.season_go a {padding:15px 40px 15px 40px;}
+	/* 아침고요사계절 팝업창 */
+	.common_pop .pop_close {right:50%; margin-right:-20px; top:-20px;}
+	.common_pop .pop_ct {padding:25px 10px 20px 10px;}
+	.common_pop .pop_txt {margin-top:20px;}
+	.common_pop .pop_wrap {margin-top:-28%;}
+	.gall_pop .pop_wrap {margin-top:-33%;}
+	.plant_pop .pop_wrap {margin-top:-39.5%;}
+	/* 사이트링크 */
+	.link_col li, .link_col li.last {width:100%; height:40px;}
+	/* 강연 */
+	.lectr_type { display:block; border:0;}
+	.lectr_type li, .lectr_type li:first-child {display:block; width:100%; box-sizing:border-box; border:1px solid #bcd3be; padding-bottom:0; margin-bottom:10px;}
+	.lectr_type .txt { padding:6% 5%; font-size:1em;}
+	.lectr_type .photo {position:relative; height:120px;}
+	.lectr_type .photo img {position:absolute; left:0; top:50%; margin-top:-30%; }
+	.lectr_spk li {padding:30px 0;}
+	.lectr_spk .photo {float:none; width:100%; height:220px; overflow:hidden;}
+	.lectr_spk .photo img {position:absolute; left:0; top:50%; margin-top:-50%;}
+	.lectr_spk .spk01 img {margin-top:-75%;}
+	.lectr_spk .photo span {font-size:1em; height:35px; line-height:35px; padding:0 20px; top:20px;}
+	.spk_career {float:none; width:100%; margin-top:20px;}
+	.spk_career dt {margin-top:15px; font-size:1em; line-height:1.7em;}
+	/* 원내매장 추가 : 16.1.11 by DH wookju */
+	.store_cate li {margin:0 3px;}
+}
+@media all and (min-aspect-ratio:9/5) {
+	.common_pop .pop_wrap, .gall_pop .pop_wrap, .plant_pop .pop_wrap {width:55%; margin-left:-27.5%; left:50%; top:0; margin-top:0; min-height:100%;}
+	.common_pop .pop_ct { padding:20px;}
+	.common_pop .pop_close {right:-50px; top:10px; width:40px; height:40px; }
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* Layout */
+.m_wrap {
+	height:976px;
+}
+.m_content {
+	width:100%; /* height:400px; */
+	position:absolute;
+	bottom:0; left:0;	
+	background:url("op_line.png") repeat-x left 50px;
+	z-index:99;
+}
+.mv_wrap {
+	position:relative;
+	height:100%;
+	overflow:hidden;
+}
+/* Main Visual */
+.mv_img {
+	position:absolute;
+	left:0; top:0;
+	width:100%; height:976px;
+}
+.mv li {
+	width:100%; height:976px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+.mv_txt {
+	padding-top:200px;
+	z-index:99;
+	height:157px;
+	text-indent:-999999px;
+	color:#fff;
+	font-size:0.875em;
+	background:url("mv_txt.png") no-repeat left 200px;
+}
+.mv_pager_wrap {
+	position: absolute;
+	width:1100px;
+	left:50%; top:380px;
+	margin-left:-548px;
+}
+.mv_bullet {
+	width: 8px; height: 8px;
+	display: inline-block;
+	background:url("mv_nav.png") no-repeat -14px 0;
+	margin-right:5px;
+	/* opacity: 0.2; */
+}
+.mv_bullet_on {
+	background:url("mv_nav.png") no-repeat 0 0;
+}
+/* Content */
+.m_mb_mid {display:none;}
+.m_sec {
+	width:352px;
+	float:left;
+	margin-right:22px;
+}
+.m_sec.m_sec_green {
+	margin-right:0;
+}
+.m_sec h2 {
+	height:50px; line-height:50px;
+	padding:0 30px;
+	background:url("op_bg.png");
+}
+.m_sec_photo {
+	width:100%; height:179px;
+	overflow:hidden;
+}
+.m_sec_photo a {display:block; background:#000;}
+.m_sec_photo span {
+	display:block; height:179px;
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.m_sec_txt {
+	height:110px;
+	padding:30px;
+	background:url("op_bg.png");
+}
+.m_sec.m_sec_green h2 { background:url("op_bg02.png"); }
+.m_sec.m_sec_green .m_sec_txt {background:#408446;}
+.m_sec_txt h3 {
+	color:#f5f5f5;
+	font-size:1.14em;
+	line-height:1.2em;
+	letter-spacing:-0.03em;
+	font-weight:600;
+	margin-bottom:15px;
+}
+.m_sec_txt h3 a {color:#f5f5f5;}
+.m_sec_txt p {
+	font-size:0.9375em;
+	line-height:1.65em;
+	color:#9e9e9e;
+	letter-spacing:-0.070em;
+}
+.m_sec.m_sec_green .m_sec_txt p { color:#92c296; }
+.m_sec.m_sec_green .m_sec_txt p a { color:#92c296; }
+.m_sec_txt a:hover p,
+.m_sec.m_sec_green a:hover p {
+	color:#ddd;
+}

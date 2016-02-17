@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(3IFMwfRa07i-auYR-B-zNXZ2MAKAc2x4R1uOSeegc5U.eot);
+}
+/* 左边的导航 */
+.sub_l h1{ font-size:45px; color:#000; font-family:"楷体"; font-weight:900;}
+.xiaolanmu,.xiaodaoh{width:80%; padding:30px 0 0 0 ; margin:0; overflow:hidden; }
+.xiaolanmu h2{width:100%; padding:0 !important; margin:0 !important; overflow:hidden;font-size:12px;color:#bbb; border-top: #ccc 1px solid; font-weight:bold; line-height:25px;}
+.xiaolanmu p{width:100%; padding:0 !important; margin:0 !important; overflow:hidden;font-size:10px !important;color:#ccc; line-height:18px;}
+
+.xiaodaoh ul{padding:0 ; margin:0; overflow:hidden; }
+.xiaodaoh ul li{padding:0 ; margin:0; overflow:hidden; border-bottom: #DDDDDD 1px solid; line-height:35px;}
+.xiaodaoh ul li:hover{ background:#0172BE; color:#FFF}
+.xiaodaoh ul li:hover a{color:#FFF; padding:0 0 0 10px;}
+/* 单页css */
+.busjk{color:#FFF; font-size:45px  !important; font-family:"楷体" !important; font-weight:900 !important;}
+
+/* 单页css */
+
+.danyewg{ width:100%; padding:0; margin:0; overflow:hidden;}
+.danyewg h4{ font-size:25px; color:#000000; padding:0 0 30px 0; text-align:center;}
+.danyewg .jiedan{width:100%; padding:0; margin:0; overflow:hidden;font-size:12px;color:#bbb; border-bottom: #DDD 1px solid; border-top: #ccc 1px solid;}
+.danyewg .jiedan samp{ float:right}
+.danyewg .nerrong{width:100%; padding:10px 0 0 0 ; margin:0; overflow:hidden;}
+
+
+/* 留言css */
+.yewdang{ width:100%; padding:0; margin:0; overflow:hidden;}
+.yewdang dl{ width:100%; margin:0; overflow:hidden; padding:5px 0; }
+.yewdang dt{ width:30%; padding:0; margin:0; overflow:hidden; float:left}
+.yewdang dd{ width:70%; padding:0; margin:0; overflow:hidden; float:left}
+.yewdang dd input ,.yewdang dd textarea{ width:95%; padding:0; margin:0; overflow:hidden; border:rgba(220,220,220,1.00) 1px solid; line-height:35px;}
+.yewdang .submit{ padding:5px 10px; margin:0 0 0 30%; overflow:hidden; border:rgba(220,220,220,1.00) 1px solid; line-height:35px;}
+
+#dituContent{ width:100%; height:100%;}

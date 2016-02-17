@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>台州蓝协</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/cate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" href="css/frozen.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/path_menu.css"/>
+		<script src="js/weixin.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<style>
+				.ui-notice{top: 0;z-index: -1;}
+				.ui-dialog{margin: 0!important;padding: 0!important;  background: rgba(0,0,0,.65);opacity: 0.8;}
+
+		
+			
+			.mui-off-canvas-right{
+				color: #fff;
+			}
+			
+			.title{
+			  	margin: 35px 15px 10px;
+			  }
+			  .title+.content{
+			  	margin: 10px 15px 35px;
+			  	color: #bbb;
+			  	text-indent: 1em;
+			  	font-size: 14px;
+			  	line-height: 24px;
+			  }
+			   input{
+			  	color: #000;
+			  }
+			  .user-info {
+				  text-align: left;
+				  padding: 20px 10px 10px;
+				  text-indent: 6px;
+				}
+				.user-info img {
+				  width: 45px;
+				  height: 45px;
+				  border-radius: 50%;
+				  overflow: hidden;
+				}
+				#mcover {
+				  position: fixed;
+				  top: 0;
+				  left: 0;
+				  width: 100%;
+				  height: 100%;
+				  background: rgba(0, 0, 0, 0.7);
+				  display: none;
+				  z-index: 200000;
+				}
+				#mcover img {
+				  position: fixed;
+				  right: 18px;
+				  top: 5px;
+				  width: 260px!important;
+				  height: 180px!important;
+				  z-index: 200001;
+				}
+				.mui-group-list-group{background:#666666; color:#fff}
+		</style>
+	</head>
+
+	<body>
+		<!--侧滑菜单容器-->
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<div class="user-info">
+							<a href="javascript:;">
+								<img id="headimgurl" class="mui-media-object mui-pull-left" src="images/tx.jpg">
+								<div class="mui-media-body">
+									<span id="nickname">体育局</span>
+									<p class="mui-ellipsis">台州蓝协欢迎您!</p>
+								</div>
+							</a>
+							
+						</div>
+						<ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" id="pageslist" style="padding:0 0 100px 0;">
+							<li class="mui-table-view-divider mui-group-list-group">走进跨世</li>
+							<div id="zjmax"></div>
+							<li class="mui-table-view-divider mui-group-list-group">服务介绍</li>
+							<div id="ppwh"></div>
+							<li class="mui-table-view-divider mui-group-list-group">加盟我们</li>
+							<div id="jmhz"></div>
+							<li class="mui-table-view-divider mui-group-list-group">会员中心</li>
+							<div id="fuwzq"></div>
+							
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
+				<!--
+				<header class="mui-bar mui-bar-nav">
+					
+					<a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
+					<h1 class="mui-title">左滑导航</h1>
+				</header>-->
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="swiper-container">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide"><img src="images/slider/01.jpg"></div>
+								<div class="swiper-slide"><img src="images/slider/02.jpg"></div>
+								<div class="swiper-slide"><img src="images/slider/03.jpg"></div>
+								<div class="swiper-slide"><img src="images/slider/04.jpg"></div>
+								<div class="swiper-slide"><img src="images/slider/05.jpg"></div>
+								<div class="swiper-slide"><img src="images/slider/9861-1.jpg"></div>
+					        </div>
+					        <!-- Add Pagination -->
+					        <div class="swiper-pagination"></div>
+					    </div>
+
+                        
+                        
+                        
+						<ul class="mainmenu" id="dd" style="margin:0 0 50px 0;">
+							<li><a href="/wx/html/news/list.html?id=2&title=%E8%B7%A8%E4%B8%96%E5%85%AC%E5%91%8A"><img src="images/1-1.jpg"><p>跨世公告</p></a></li>
+						    <li><a href="/wx/html/pages/detail.html?id=7" style="height: 87.3333333333333px;"><span class="mui-icon iconfont">&#xe668;</span><p>公司简介</p></a></li>
+						    <li><a href="/wx/html/pages/detail.html?id=6" style="height: 87.3333333333333px;"><span class="mui-icon iconfont">&#xe692;</span><p>服务介绍</p></a></li>
+						    <li><a href="/wx/html/pages/detail.html?id=15" style="height: 87.3333333333333px;"><span class="mui-icon iconfont">&#xe6a4;</span><p>会员资格</p></a></li>
+						    <li><a href="/wx/html/pages/detail.html?id=20"><span class="mui-icon iconfont">&#xe6bd;</span><p>加盟中心</p></a></li>
+						    <li><a href="/regiser/home/index.php"><span class="mui-icon iconfont">&#xe692;</span><p>比赛报名</p></a></li>
+						    <li><a href="/regiser/home/search.php"><span class="mui-icon iconfont">&#xe681;</span><p>报名查询</p></a></li>
+						    <li><a href="/regiser/home/searchscore.php"><span class="mui-icon iconfont">&#xe624;</span><p>成绩查询</p></a></li>
+						</ul>
+                        
+
+						
+					</div>
+				</div>
+				<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<!--path菜单-->
+	    <div id="pathmenu" class="menu_button fixed display_none" style="z-index: 0; line-height: 2.5em; display: block;"><span>联系</span></div>
+        
+	    <div class="menu_button fixed display_none" id="more"><i class="mui-icon mui-icon-bars"></i>
+	        <div class="menu_text"><span>菜单</span></div>
+	    </div>
+        
+	    <div class="menu_button fixed display_none" id="tel"><i class="mui-icon mui-icon-phone"></i>
+	        <div class="menu_text"><span>电话</span></div>
+	    </div>
+        
+	    <div class="menu_button fixed display_none" id="map"><i class="mui-icon mui-icon-location"></i>
+	
+	        <div class="menu_text"><span>地图</span></div>
+		</div>
+        
+		
+        
+<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" id="syeh" href="/wx/">
+        <span class="mui-icon iconfont">&#xe64a;</span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" id="ddlbm" href="/wx/html/news/categary.html">
+        <span class="mui-icon iconfont">&#xe688;</span>
+        <span class="mui-tab-label">新闻中心</span>
+    </a>
+    <a class="mui-tab-item" id="jshdkw" href="/wx/html/product/categary.html">
+        <span class="mui-icon iconfont">&#xe615;</span>
+        <span class="mui-tab-label">视频展示</span>
+    </a>
+    <a class="mui-tab-item" id="ddltg" href="/wxhd/list.html">
+        <span class="mui-icon iconfont">&#xe63d;</span>
+        <span class="mui-tab-label">活动中心</span>
+    </a>
+    <a class="mui-tab-item" id="ddlxw" href="/wx/lxwm.html">
+        <span class="mui-icon iconfont">&#xe63f;</span>
+        <span class="mui-tab-label">联系我们</span>
+    </a>
+</nav>
+ 
+        
+	    <div class="pathModel"></div>
+	    <div class="ui-dialog ui-dialog-notice show"><div class="ui-dialog-cnt"><i class="ui-loading-bright"></i><p>加载中...</p></div></div>
+		<div id="mcover" onclick="document.getElementById('mcover').style.display='';">
+            <img src="images/guide.png">
+        </div>
+	    <script src="js/common.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+		
+		<script src="js/path.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false,
+			});
+			//侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			//主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			//菜单容器
+			var offCanvasSide = document.getElementById("offCanvasSide");
+
+			//Android暂不支持整体移动动画
+			
+			//移动效果是否为整体移动
+			var moveTogether = false;
+			//侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+			var classList = offCanvasWrapper[0].classList;
+			//变换侧滑动画移动效果；
+			mui('.mui-input-group').on('change','input',function () {
+				if(this.checked){
+					switch (this.value){
+						case 'main-move':
+							classList.remove('mui-slide-in');
+							if(moveTogether){
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+								moveTogether = false;
+							}
+							break;
+						case 'menu-move':
+							classList.add('mui-slide-in');
+							break;
+						case 'all-move':
+							if(classList.contains('mui-slide-in')){
+								classList.remove('mui-slide-in');
+							}
+							moveTogether = true;
+							//整体滑动时，侧滑菜单在inner-wrap内
+							offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+							break;
+					}
+					offCanvasWrapper.offCanvas().refresh();
+					offCanvasSide.classList.remove('mui-transitioning');
+					offCanvasSide.setAttribute('style', '');
+				}
+			});
+
+
+			
+			document.getElementById('more').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('show');
+				$(".pathModel").hide();
+			});
+			document.getElementById('map').addEventListener('tap', function() {
+				openMap();
+			});
+			document.getElementById('tel').addEventListener('tap', function() {
+				window.location.href="tel:4009260070";
+			});
+			
+			
+				document.getElementById('syeh').addEventListener('tap', function() {
+				window.location.href="/wx/";
+			});
+				document.getElementById('ddlbm').addEventListener('tap', function() {
+				window.location.href="/wx/html/news/categary.html";
+			});
+				document.getElementById('jshdkw').addEventListener('tap', function() {
+				window.location.href="/wx/html/product/categary.html";
+			});
+				document.getElementById('ddltg').addEventListener('tap', function() {
+				window.location.href="/wxhd/list.html";
+			});
+				document.getElementById('ddlxw').addEventListener('tap', function() {
+				window.location.href="/wx/lxwm.html";
+			});
+		
+			
+			//主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+
+			 //实现ios平台的侧滑关闭页面；
+			var mySwiper = new Swiper('.swiper-container',{
+			    loop: true,
+				autoplay: 3000,
+				pagination: '.swiper-pagination',
+        		paginationClickable: true
+			 });
+			 $(function(){
+			 	mui.toast("向左滑动查看更多");
+			 	$("#dd").find("a").each(function(){
+			 		$(this).on("tap",function(){
+			 			window.location.href=$(this).attr("href");
+			 		});
+			 	});
+				if(localStorage.getItem("wx_user")){
+					var user=JSON.parse(localStorage.getItem("wx_user"));
+					var nickname=user.nickname;
+					var headimgurl=user.headimgurl;
+					$("#nickname").text(nickname);
+					if(headimgurl!=""){
+						$("#headimgurl").attr("src",headimgurl);
+					}
+				}else{
+					
+						window.location.href="login.php";
+					
+					return;
+				}
+				initWeixin();
+			 	var pagesUrl=serverUrl+"/pages?lang="+lang+"&callback=?";
+			 	$.getJSON(pagesUrl,function(json){
+			 		console.log(json);
+			 		localStorage.setItem("pages",JSON.stringify(json));
+			 		$(".ui-dialog").removeClass("show");
+			 		for(var i=0;i<json.length;i++){
+						if(json[i].parent_id=="1"){
+							var html='<li class="mui-table-view-cell" data-id="'+json[i].id+'"><a class="mui-navigate-right mui-ellipsis">'+json[i].page_name+'</a></li>';
+							$("#zjmax").append(html);
+						}else if(json[i].parent_id=="6"){
+							var html='<li class="mui-table-view-cell" data-id="'+json[i].id+'"><a class="mui-navigate-right mui-ellipsis">'+json[i].page_name+'</a></li>';
+							$("#ppwh").append(html);
+						}
+						else if(json[i].parent_id=="15"){
+							var html='<li class="mui-table-view-cell" data-id="'+json[i].id+'"><a class="mui-navigate-right mui-ellipsis">'+json[i].page_name+'</a></li>';
+							$("#jmhz").append(html);
+						}
+						else if(json[i].parent_id=="20"){
+							var html='<li class="mui-table-view-cell" data-id="'+json[i].id+'"><a class="mui-navigate-right mui-ellipsis">'+json[i].page_name+'</a></li>';
+							$("#fuwzq").append(html);
+						}
+						
+			 			
+			 		}
+			 		$("#pageslist").find("li").each(function(){
+			 			$(this).on("tap",function(){
+							if($(this).hasClass("mui-table-view-cell")){
+								var id=$(this).data("id");
+								window.location.href="html/pages/detail.html?id="+id;
+							}
+			 				
+			 			});
+			 		});
+			 	});
+			 });
+			 window.onload=function(){
+				var cc=document.getElementById("dd").getElementsByTagName("a")[0].offsetHeight;
+				document.getElementById("dd").getElementsByTagName("a")[1].style.height=[(cc-6)/3]+"px";
+				document.getElementById("dd").getElementsByTagName("a")[2].style.height=[(cc-6)/3]+"px";
+				document.getElementById("dd").getElementsByTagName("a")[3].style.height=[(cc-6)/3]+"px";
+			}
+		</script><script type="text/javascript">
+    function getRTime(){
+        var EndTime= new Date('2015/11/15 08:00:00'); 
+        var NowTime = new Date();
+        var t =EndTime.getTime() - NowTime.getTime();
+        /*var d=Math.floor(t/1000/60/60/24);
+        t-=d*(1000*60*60*24);
+        var h=Math.floor(t/1000/60/60);
+        t-=h*60*60*1000;
+        var m=Math.floor(t/1000/60);
+        t-=m*60*1000;
+        var s=Math.floor(t/1000);*/
+
+        var d=Math.floor(t/1000/60/60/24);
+        var h=Math.floor(t/1000/60/60%24);
+        var m=Math.floor(t/1000/60%60);
+        var s=Math.floor(t/1000%60);
+
+        document.getElementById("t_d").innerHTML = d + "天";
+        document.getElementById("t_h").innerHTML = h + "时";
+        document.getElementById("t_m").innerHTML = m + "分";
+        document.getElementById("t_s").innerHTML = s + "秒";
+    }
+    setInterval(getRTime,1000);
+    </script> 
+<div style=" display:none;"><script src="http://s4.cnzz.com/stat.php?id=1257502840&web_id=1257502840" language="JavaScript"></script></div>
+
+	</body>
+
+</html>

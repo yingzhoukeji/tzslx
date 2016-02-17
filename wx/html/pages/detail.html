@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>台州蓝协</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="/wx/css/mui.min.css">
+        <link rel="stylesheet" href="/wx/css/app.css">
+		<style>
+
+.mui-content{background:#FFF;}
+
+		</style>
+	</head>
+	<body>
+		<!-- header class="mui-bar mui-bar-nav" style="background:#33276f">
+			<a href="/wx/index.html" class="mui-pull-left tubiao"></a>
+			<a href="/wx/html/product/search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+		</header --> 
+		<div class="mui-content">
+			<div class="mui-content-padded"></div>
+		</div>
+        
+<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item mui-active" id="syeh" href="/wx/">
+        <span class="mui-icon iconfont">&#xe64a;</span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" id="ddlbm" href="/wx/html/news/categary.html">
+        <span class="mui-icon iconfont">&#xe688;</span>
+        <span class="mui-tab-label">新闻中心</span>
+    </a>
+    <a class="mui-tab-item" id="jshdkw" href="/wx/html/product/categary.html">
+        <span class="mui-icon iconfont">&#xe615;</span>
+        <span class="mui-tab-label">视频展示</span>
+    </a>
+    <a class="mui-tab-item" id="ddltg" href="/wxhd/list.html">
+        <span class="mui-icon iconfont">&#xe63d;</span>
+        <span class="mui-tab-label">活动中心</span>
+    </a>
+    <a class="mui-tab-item" id="ddlxw" href="/wx/lxwm.html">
+        <span class="mui-icon iconfont">&#xe63f;</span>
+        <span class="mui-tab-label">联系我们</span>
+    </a>
+</nav>
+
+		<script type="text/javascript" src="../../js/common.js" ></script>
+		<script src="../../js/zepto.min.js"></script>
+		<script>
+			$(function(){
+				var id=GetQueryString("id");
+				if(localStorage.getItem("pages")){
+					var page=getPageById(id);
+					var page_name=page.page_name;
+					var content=page.content;
+					$(".mui-title").text(page_name);
+					$("title").text(page_name);
+					$(".mui-content-padded").html(content);
+					$("img").each(function(){
+						var src=$(this).attr("src");
+						if(src.indexOf("http://")>-1){
+							
+						}else{
+							$(this).attr("src",picUrl+src);
+						}
+						
+						$(this).show();
+					});
+					$("a").each(function(){
+						$(this).removeAttr("href");
+					});
+				}
+				$("#back").on("click",function(){
+					window.location.href="/wx/";
+				})
+				$("#syeh").on("click",function(){
+					window.location.href="/wx/";
+				})
+				$("#ddlbm").on("click",function(){
+					window.location.href="/wx/html/news/categary.html";
+				})
+				$("#jshdkw").on("click",function(){
+					window.location.href="/wx/html/product/categary.html";
+				})
+				$("#ddltg").on("click",function(){
+					window.location.href="/wxhd/list.html";
+				})
+				$("#ddlxw").on("click",function(){
+					window.location.href="/wx/lxwm.html";
+				})
+			});
+			function getPageById(id){
+				var pages=JSON.parse(localStorage.getItem("pages"));
+				console.log(pages);
+				var page=null;
+				for(var i=0;i<pages.length;i++){
+					if(id==pages[i].id){
+						page=pages[i];
+					}
+				}
+				return page;
+			}
+		</script>
+        <div style="display:none"><script src="http://s4.cnzz.com/stat.php?id=1257502840&web_id=1257502840" language="JavaScript"></script></div>
+	</body>
+</html>

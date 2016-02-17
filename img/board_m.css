@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+/* Width of List Items */
+.board-wrap .t-w05 {width:5%;}
+.board-wrap .t-w10 {width:10%;}
+.board-wrap .t-w15 {width:15%;}
+.board-wrap .t-w20 {width:20%;}
+.board-wrap .t-w25 {width:25%;}
+.board-wrap .t-w30 {width:30%;}
+.board-wrap .t-w33 {width:33.3333%;}
+.board-wrap .t-w35 {width:35%;}
+.board-wrap .t-w40 {width:40%;}
+.board-wrap .t-w45 {width:45%;}
+.board-wrap .t-w50 {width:50%;}
+.board-wrap .t-w55 {width:55%;}
+.board-wrap .t-w60 {width:60%;}
+.board-wrap .t-w65 {width:65%;}
+.board-wrap .t-w70 {width:70%;}
+.board-wrap .t-w75 {width:75%;}
+.board-wrap .t-w80 {width:80%;}
+.board-wrap .t-w85 {width:85%;}
+.board-wrap .t-w90 {width:90%;}
+.board-wrap .t-w95 {width:95%;}
+.board-wrap .t-w100 {display:block; clear:both;}
+
+.board-wrap input,
+.board-wrap textarea {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-webkit-overflow-scrolling: touch;
+	-moz-overflow-scrolling:touch;
+	-o-overflow-scrolling:touch;
+}
+/* Board List */
+.board-list > li > div > p, .board-list > li > div > h6 {padding:12px 0;}
+
+/* Board Write */
+.board-write li,
+.board-write li.w65,
+.board-write li.w35 {
+	float:none;
+	width:100%;
+}
+.board-write .label { width:25%; }
+.board-write .write-form { width:75%; }
+.board-write input[type="text"],
+.board-write input[type="password"] {padding:0 1%;}
+.board-write .write-ip02 {width:95%;}
+.board-write .write-ip03 {width:95.2%;}
+/* Comment Write */
+.comment-write label::before {
+	content:'\002022';
+	color:#444;
+}
+/* 썸네일 리스트 */
+.thumb_list li {box-sizing:border-box; width:31%; margin-right:3.5%;}
+.gd_diary .img, .thumb_notice .img {height:auto;}
+.thumb_list .txt {padding:10px 5%;}
+.thumb_list h4 {font-size:1em;}
+
+@media all and (max-width:767px) {
+	.board-list .num,
+	.board-list .date,
+	.board-list .name,
+	.board-list .count { font-size:0.86em;}
+/* 	.board-view .prop > h6,
+	.board-view .info { font-size:0.86em;}
+	.board-view .prop h6 { width:50px; } */
+	.board-list .head {font-size:1em;}
+	.board-list .head .num,
+	.board-list .head .date,
+	.board-list .head .name,
+	.board-list .head .count { font-size:12px;}
+	.board-list > li.notice .num span {padding:3px 5px;}
+	/* board-view */
+	.board-view > li,
+	.comment-wrap h6,
+	.comment-view > li > p,
+	.comment-view > li > .options {
+		padding-left:4%;
+		padding-right:4%;
+		box-sizing:border-box;
+	}
+	.board-view > li.content {padding-left:5px; padding-right:5px;}
+	.board-view > li.w100 {width:100%;}
+	.board-view > li.w55 {width:55%;}
+	.board-view > li.w30 {width:30%;}
+	.board-view > li.w15 {width:15%;}
+	/* Comment Write */
+	.cmt-of-cmt > li,
+	.comment-view .comment-write { 
+		padding-right:4%;
+		padding-left:8%;
+		background-position:4% 20px;
+	}
+	.board-view .prop h6 { display:none; }
+	.board-view .title { 
+		border-bottom:1px solid #aaa; 
+		background:#f8f8f8;
+		color:#444;
+		font-weight:600;
+	}
+	.board-view .info { 
+		text-align:right;
+		border-bottom:0;
+	}
+	.board-view .info li { 
+		display:inline-block;
+		float:none; 
+		width:auto;
+		padding-left:10px;
+		margin-left:10px;
+		font-size:0.86em;
+		color:#999;
+		background:url("/image/board_img/line_bg.gif") no-repeat left 7px;
+	}
+	.board-view .info li:first-child {
+		margin-left:0;
+		padding-left:0;
+		background:none;
+	}
+	.board-view .info .count::before {
+		content:'조회';
+		margin-right:3px;
+	}
+	.board-view .file { font-size:0.86em; }
+	.board-view .file span::before {
+		content:'첨부파일';
+		font-weight:600;
+		color:#444;
+		margin-right:20px;
+	}
+
+	/* 썸네일 리스트 */
+	.thumb_list li, .thumb_list .last {width:100%; margin-right:0; margin-bottom:15px; float:none; overflow:hidden; display:table; table-layout:fixed;}
+	.thumb_list a {display:table-row;}
+	.thumb_list .img {width:150px; position:relative; display:table-cell;}
+	.thumb_list img {width:150px; min-height:0;}
+	.thumb_list .txt {
+		vertical-align:middle;
+		box-sizing:border-box;
+		display:table-cell;
+		padding:0 3%;
+	}
+	.thumb_list li:hover {	
+		transform:translate(0,3px);
+		-webkit-transform:translate(0,3px);
+		-moz-transform:translate(0,3px);
+		-o-transform:translate(0,3px);
+	}
+	.gd_diary li, .gd_diary .img {height:98px;}
+
+	/* online form */
+	.info-box {
+		width:100%;
+		float:left;
+		overflow:hidden;	
+	}
+	.in-02 {
+		width:30%;
+		height:16px;
+		padding:5px 2px;
+		font-size:12px;
+		margin-right:2px;
+		border:1px solid #d3d3d3;
+		background:#eee;
+	}
+
+	/* 기본 체크박스(활성화) */
+	input.i_basic[type='checkbox']					{vertical-align:middle; margin:-5px 2px 0 0;}
+	input.i_basic[type='checkbox']					{background:#fff; border:solid 1px #ccc; border-radius:4px 4px; height:17px; width:17px; -webkit-appearance:none;}
+	input.i_basic[type='checkbox']:checked			{background:#878787; border:solid 1px #777; border-radius:4px 4px;}
+	input.i_basic[type='checkbox']:checked:after	{content:' '; display:block; width:15px; height:15px; background:url("check_on.png") no-repeat 1px 2px; background-size:14px 11px; position:relative; border-radius:4px 4px;}
+
+	/* 기본 체크박스(비활성화) */
+	input.i_basic2[type='checkbox']					{vertical-align:middle; margin:-5px 2px 0 0;}
+	input.i_basic2[type='checkbox']					{background:#c7c7c7; border:solid 1px #aaa; border-radius:4px 4px; height:17px; width:17px; -webkit-appearance:none;}
+	input.i_basic2[type='checkbox']:checked			{background:#c7c7c7; border:solid 1px #aaa; border-radius:4px 4px;}
+	input.i_basic2[type='checkbox']:checked:after	{content:' '; display:block; width:15px; height:15px; background:url("check_on2.png") no-repeat 1px 2px; background-size:14px 11px; position:relative; border-radius:4px 4px;}
+
+	/* 기본 라디오버튼 */
+	input.i_basic[type='radio']						{vertical-align:middle;}
+	input.i_basic[type='radio']						{background:#fff; border:solid 1px #ccc; border-radius:15px 15px; height:15px; width:15px; -webkit-appearance:none;} 
+	input.i_basic[type='radio']:checked				{background:#666; border:solid 1px #555; border-radius:15px 15px;} 
+	input.i_basic[type='radio']:checked:after		{content:' '; display:block; width:5px; height:5px; background:#fff; border:1px solid #555; position:relative; top:3px; left:3px; border-radius:12px 12px;}
+
+
+}
+@media all and (max-width:568px) {
+	
+	/* Width of List Items */
+	.board-wrap .m-auto {width:auto;}
+	.board-wrap .m-w05 {width:5%;}
+	.board-wrap .m-w10 {width:10%;}
+	.board-wrap .m-w15 {width:15%;}
+	.board-wrap .m-w20 {width:20%;}
+	.board-wrap .m-w25 {width:25%;}
+	.board-wrap .m-w30 {width:30%;}
+	.board-wrap .m-w33 {width:33.3333%;}
+	.board-wrap .m-w35 {width:35%;}
+	.board-wrap .m-w40 {width:40%;}
+	.board-wrap .m-w45 {width:45%;}
+	.board-wrap .m-w50 {width:50%;}
+	.board-wrap .m-w55 {width:55%;}
+	.board-wrap .m-w60 {width:60%;}
+	.board-wrap .m-w65 {width:65%;}
+	.board-wrap .m-w70 {width:70%;}
+	.board-wrap .m-w75 {width:75%;}
+	.board-wrap .m-w80 {width:80%;}
+	.board-wrap .m-w85 {width:85%;}
+	.board-wrap .m-w90 {width:90%;}
+	.board-wrap .m-w95 {width:95%;}
+	.board-wrap .m-w100 {display:block; clear:both; float:none; width:100%; }
+	
+	/* Board List */
+	.board-list .num { 	display:none; }
+	.board-list > li.head { display:none; }
+	.board-list > li > div { width:94%; margin:0 auto;}
+	.board-list .title {
+		display:block;
+		padding:0;
+		margin:5px 0;
+	}
+	.board-list .title a {
+		padding:0;
+		font-weight:600;
+	}
+	.board-list .reply .title a::before { 
+		content:"Re:";
+		margin-right:5px;
+		
+	}
+	.board-list .reply .title a {
+		padding-left:15px;
+		background: url("re.gif") no-repeat 3px 5px;
+	}
+	.board-list .date {
+		text-align:left;
+		padding:0;
+		padding-bottom:5px;
+		color:#999;
+	}
+	.board-list .name {
+		text-align:left;
+		padding:0;
+		padding-bottom:5px;
+		padding-right:10px;
+		margin-right:10px;
+		background:url("/image/board_img/line_bg.gif") no-repeat right 5px;
+		color:#999;
+	}
+	.board-list .reply .title + p { padding-left:18px;}
+	.board-list .count::before {
+		content:'조회';
+		margin-right:3px;
+	}
+	.board-list .count {
+		text-align:left;
+		padding:0;
+		padding-bottom:5px;
+		color:#999;
+		padding-left:10px;
+		margin-left:10px;
+		background:url("/image/board_img/line_bg.gif") no-repeat left 7px;
+	}
+	/* Board View */
+	/* .board-view .max-content {
+		max-height:250px;
+	} */
+	/* 썸네일 리스트 */
+	.thumb_list .img {width:90px;}
+	.thumb_list img {position:absolute; left:50%; top:0; margin-left:-75px; max-width:200px;}
+	.thumb_list h4 {height:auto; max-height:3.2em; line-height:1.6em; margin-bottom:3px;}
+	.thumb_notice li, .thumb_notice .img {height:100px;}
+	.thumb_notice img {height:100px; width:196px; margin-left:-98px;}
+}
+@media all and (max-width:480px) {
+
+	/* Board Write */
+	.board-write .write-ip03 {width:95.7%;}
+	/* Comment Write */
+	.comment-write label { width:80px;}
+	.comment-write textarea { height:100px; }
+	/* pager */
+	.list-pager a.m-hide {display:none;}
+
+
+	/* online form */
+	.info-box {
+		width:100%;
+		float:left;
+		overflow:hidden;	
+	}
+	.in-02 {
+		width:20%;
+		height:16px;
+		padding:5px 2px;
+		font-size:12px;
+		margin-right:2px;
+		border:1px solid #d3d3d3;
+		background:#eee;
+	}
+	.in-04 {
+		width:86%;
+		padding:15px;
+		border:1px solid #d3d3d3;
+	}
+
+	/* 기본 체크박스(활성화) */
+	input.i_basic[type='checkbox']					{vertical-align:middle; margin:-5px 2px 0 0;}
+	input.i_basic[type='checkbox']					{background:#fff; border:solid 1px #ccc; border-radius:4px 4px; height:17px; width:17px; -webkit-appearance:none;}
+	input.i_basic[type='checkbox']:checked			{background:#878787; border:solid 1px #777; border-radius:4px 4px;}
+	input.i_basic[type='checkbox']:checked:after	{content:' '; display:block; width:15px; height:15px; background:url("check_on.png") no-repeat 1px 2px; background-size:14px 11px; position:relative; border-radius:4px 4px;}
+
+	/* 기본 체크박스(비활성화) */
+	input.i_basic2[type='checkbox']					{vertical-align:middle; margin:-5px 2px 0 0;}
+	input.i_basic2[type='checkbox']					{background:#c7c7c7; border:solid 1px #aaa; border-radius:4px 4px; height:17px; width:17px; -webkit-appearance:none;}
+	input.i_basic2[type='checkbox']:checked			{background:#c7c7c7; border:solid 1px #aaa; border-radius:4px 4px;}
+	input.i_basic2[type='checkbox']:checked:after	{content:' '; display:block; width:15px; height:15px; background:url("check_on2.png") no-repeat 1px 2px; background-size:14px 11px; position:relative; border-radius:4px 4px;}
+
+	/* 기본 라디오버튼 */
+	input.i_basic[type='radio']						{vertical-align:middle;}
+	input.i_basic[type='radio']						{background:#fff; border:solid 1px #ccc; border-radius:15px 15px; height:15px; width:15px; -webkit-appearance:none;} 
+	input.i_basic[type='radio']:checked				{background:#666; border:solid 1px #555; border-radius:15px 15px;} 
+	input.i_basic[type='radio']:checked:after		{content:' '; display:block; width:5px; height:5px; background:#fff; border:1px solid #555; position:relative; top:3px; left:3px; border-radius:12px 12px;}
+
+	.btn-big a {
+		display:inline-block;
+		height:40px; line-height:40px;
+		padding:0 30px;
+	}
+
+}
+
+
+
+

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2015台州蓝协报名成功确认函</title>
+<style type="text/css" media="screen"> 
+@media print{ 
+.print {display:block;} 
+.notPrint {display:none;} 
+} 
+</style> 
+<script language="javascript"> 
+function preview() 
+{ 
+bdhtml=window.document.body.innerHTML; 
+sprnstr="<!--startprint-->"; 
+eprnstr="<!--endprint-->"; 
+prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+window.document.body.innerHTML=prnhtml; 
+window.print(); 
+} 
+</script>
+<style>
+
+.dywk{ width:640px; margin:0 auto; overflow:hidden; text-align:center;  line-height:30px; }
+.biaodan{ width:560px; text-align:left;  overflow:hidden; margin:10% 0 0 0; padding:20px 30px 20px 30px; border:#FF0004 10px solid; background:url(http://www.tzslx.com/css/11-3.jpg)}
+.biaodan h1{ margin:0 auto; text-align:center;}
+.biaodan .mz{font-family:'微软雅黑', '黑体', '宋体'; font-size:18px;}
+.biaodan .mzhs{font-family:'微软雅黑', '黑体', '宋体'; font-size:18px; color:rgba(255,0,4,1.00);}
+</style>
+</head>
+
+<body>
+<form id="WebForm1" method="post" > 
+<center><!-- 这个部分不打印！ --></center> 
+<div class="dywk">
+
+<!--startprint--> 
+<div class="biaodan">
+<h1 style="font-family:'微软雅黑', '黑体', '宋体'; border-bottom:rgba(235,235,235,1.00) 1px solid; font-size:22px; line-height:50px;  margin:0 10%; padding:0 0 20px 0"><img src="http://www.tzslx.com/css/11-2.png"><br>2015台州蓝协报名成功确认函</h1><br>
+<P>　　<b class="mzhs">{$info.name}</b> 您好!</P>
+<P>　　恭喜您成功报名2015台州蓝协。您的参赛号码：<b class="mz">{$info.hbh}</b>，衣服尺寸：<b class="mz"> <if condition="$info['clothessize'] eq 0 ">XXL
+	<elseif condition="$info['clothessize'] eq 1 "/>XL
+	<elseif condition="$info['clothessize'] eq 2 "/>L
+	<elseif condition="$info['clothessize'] eq 3 "/>M
+	<elseif condition="$info['clothessize'] eq 4 "/>S
+ <else /> 
+ </if>
+ 号
+</b>，证件号码：<b class="mz">{$info.cardid}</b>，性别： <b class="mz">
+<if condition="$info['sex'] eq 0 ">男
+ <else /> 女
+ </if>
+</b>，请妥善保管此确认函自行核对信息并签名。</P>
+<P class="mz">　　备注：</P>
+<P>　　此确认函将与您注册时使用的个人身份证件（身份证、护照）相结合，作为赛前领取参赛包的唯一凭证，请妥善保管。赛前竞赛物品及号码布的领取详情请登陆台州蓝协官方网站：www.tzmls.org 查询。</P><br>
+<P style="text-align:center; font-size:18px; font-weight:900; font-family:'微软雅黑', '楷体', '宋体'">谨慎参赛 量力而行</P>
+<P>　　跨世体育赛是一项长距离、高负荷、大强度的运动项目，也是一项高风险的竞技项目，对参赛者身体状况有较高的要求。参赛者应身体健康，有长期参加跑步锻炼或训练的基础。请确认您已经充分了解跨世体育存在的风险，并且您具备完成所报参加项目的能力。</P><br><br>
+<P style="text-align:center; font-size:18px; font-weight:900; font-family:'宋体'">我已阅读并同意以上声明！</P>
+<P style="text-align:right; padding:0 10% 0 0;">签名：<b class="mz">__________</b></P>      
+
+</div>
+<!--endprint--> 
+
+
+</div>
+<p style="text-align:center; width:100%; margin:20px 0;"> 
+<input type="button" name="print" value="预览并打印" onclick="preview()" style="padding:10px 20px; background:rgba(0,0,0,1.00); color:#FFFFFF"> 
+</p>
+<!-- 
+<style> @media Print { .Noprn { DISPLAY: none }} </style> 
+<p class="Noprn">本部分以下不被打印</p> 
+<div id="datagrid"> 
+打印 
+</div> 
+<input class="Noprn" type="button" onclick="window.print()" value="print">
+-->
+</form> 
+</body>
+</html>

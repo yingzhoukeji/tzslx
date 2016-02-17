@@ -1,0 +1,10 @@
+[2015-11-02 11:09:07][debug] postdata:{"type":"0","name":"Hyl1","telephone":"18382301124","sex":"0","cardid":"","istz":"1","nationalityid":"1","clothessize":"0","istest":"1","joinin":"","besttype1score":"<1.5H","besttype2score":"<2.5H","emergencycontactname":"","emergencycontactphone":"","email":"","weixin":"","bloodtype":"0","birthday":"","schooling":"0","occupation":"","cityid":"61","adress":"","postcode":"","trainrate":"","mileage":"","guardian":"","guardianphone":"","guardiancid":"","guardianrelationship":""}
+[2015-11-02 11:09:07][debug] tel:18382301124
+[2015-11-02 11:09:07][debug] step0:
+[2015-11-02 11:09:07][debug] step1:
+[2015-11-02 11:09:07][debug] step2:
+[2015-11-02 11:09:07][debug] step3:
+[2015-11-02 11:10:17][debug] postdata:{"type":"0","name":"Hyl1","telephone":"18382301124","sex":"0","cardid":"","istz":"1","nationalityid":"1","clothessize":"0","istest":"1","joinin":"","besttype1score":"<1.5H","besttype2score":"<2.5H","emergencycontactname":"","emergencycontactphone":"","email":"","weixin":"","bloodtype":"0","birthday":"","schooling":"0","occupation":"","cityid":"61","adress":"","postcode":"","trainrate":"","mileage":"","guardian":"","guardianphone":"","guardiancid":"","guardianrelationship":""}
+[2015-11-02 11:10:17][debug] tel:18382301124
+[2015-11-02 11:10:18][debug] step6:
+[2015-11-02 11:10:18][debug] {"r":1,"msg":"\u8be5\u624b\u673a\u53f7\u7801\u5df2\u7ecf\u62a5\u540d\uff01","data":null}

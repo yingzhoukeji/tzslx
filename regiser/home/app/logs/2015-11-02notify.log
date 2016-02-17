@@ -1,0 +1,42 @@
+[2015-11-02 17:33:27][debug] begin notify
+[2015-11-02 17:33:28][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"d9FHVz6FX6S5bewu","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102173321","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"9AED92565B17E6AFDBDAF3791A6E77AE","time_end":"20151102173326","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021428898127"}
+[2015-11-02 17:33:28][debug] call back test:订单查询成功
+[2015-11-02 17:33:28][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"vnmm96l0i9xgj80loker0akpvloc3i85","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102173321","result_code":"SUCCESS","return_code":"SUCCESS","sign":"EA3986D33DC6DB7C3212A0904246F138","time_end":"20151102173327","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021428898127"}
+[2015-11-02 17:33:28][debug] -->成功支付4分
+[2015-11-02 17:41:17][debug] out_trade_no-->126832550120151102174116
+[2015-11-02 17:41:24][debug] begin notify
+[2015-11-02 17:41:25][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"TCSxZ4S3f1vRRdKC","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102174116","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"19C9878D0E97AD61BBEE24C02875B32E","time_end":"20151102174123","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429015301"}
+[2015-11-02 17:41:25][debug] call back test:订单查询成功
+[2015-11-02 17:41:25][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"lqyyak0ksd87fc10gnq1uqy9aqp2irnr","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102174116","result_code":"SUCCESS","return_code":"SUCCESS","sign":"151DC866AE7F98125B77B351C49E211B","time_end":"20151102174124","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021429015301"}
+[2015-11-02 17:41:25][debug] 成功支付4分
+[2015-11-02 17:46:46][debug] out_trade_no-->126832550120151102174646
+[2015-11-02 17:46:46][debug] sql-->UPDATE `pa_marathon`  SET `out_trade_no`='126832550120151102174646'  WHERE ( `id` = '8467' )
+[2015-11-02 17:46:55][debug] begin notify
+[2015-11-02 17:46:55][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"82BrgNTGWfIbXBVx","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102174646","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"64CC857555DCC70446E18DA91D382CD6","time_end":"20151102174654","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429076940"}
+[2015-11-02 17:46:55][debug] call back test:订单查询成功
+[2015-11-02 17:46:55][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"0ty2uueri63wiyhblycsphn44hfse6kk","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102174646","result_code":"SUCCESS","return_code":"SUCCESS","sign":"AC5B572DE170AEE5D4AD3BAFCD5123C8","time_end":"20151102174655","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021429076940"}
+[2015-11-02 17:46:56][debug] 成功支付4分
+[2015-11-02 17:51:04][debug] out_trade_no-->126832550120151102175104
+[2015-11-02 17:51:04][debug] sql-->UPDATE `pa_marathon`  SET `out_trade_no`='126832550120151102175104'  WHERE ( `id` = '8467' )
+[2015-11-02 17:51:12][debug] begin notify
+[2015-11-02 17:51:12][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"d9WR5ZzcQnPD6hFn","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102175104","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"D8558AFE1705C36E4A9A817EC3DAC92C","time_end":"20151102175110","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429130782"}
+[2015-11-02 17:51:12][debug] call back test:订单查询成功
+[2015-11-02 17:51:12][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"e9vm7cpcvvz2hctovg32v6tiszgsie29","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102175104","result_code":"SUCCESS","return_code":"SUCCESS","sign":"0B7D4B732EB24A5B762E1F417B52D648","time_end":"20151102175110","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021429130782"}
+[2015-11-02 17:51:12][debug] notifySql-->UPDATE `pa_marathon`  SET `transaction_id`='1008400362201511021429130782',`total_fee`='4',`openid`='oMSUaxBbLBX0jW3ohKIaZqO-0omU',`ispay`=1  WHERE ( `out_trade_no` = '126832550120151102175104' )
+[2015-11-02 17:51:12][debug] 成功支付4分
+[2015-11-02 17:54:08][debug] out_trade_no-->126832550120151102175408
+[2015-11-02 17:54:08][debug] sql-->UPDATE `pa_marathon`  SET `out_trade_no`='126832550120151102175408'  WHERE ( `id` = '8467' )
+[2015-11-02 17:54:14][debug] begin notify
+[2015-11-02 17:54:15][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"fdwDKcoFXQ8DythT","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102175408","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"EC244B874158612C342631FCB512F907","time_end":"20151102175413","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429197247"}
+[2015-11-02 17:54:15][debug] call back test:订单查询成功
+[2015-11-02 17:54:15][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"c34a1gd3al9as6n65m9etsg30cg97ccq","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102175408","result_code":"SUCCESS","return_code":"SUCCESS","sign":"8C70A5CF654E5F1B15D2CE850CA066A0","time_end":"20151102175414","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021429197247"}
+[2015-11-02 17:54:15][debug] notifySql-->UPDATE `pa_marathon`  SET `transaction_id`='1008400362201511021429197247',`total_fee`='4',`openid`='oMSUaxBbLBX0jW3ohKIaZqO-0omU',`ispay`=1  WHERE ( `out_trade_no` = '126832550120151102175408' )
+[2015-11-02 17:54:15][debug] 成功支付4分
+[2015-11-02 18:09:12][debug] out_trade_no-->126832550120151102180911
+[2015-11-02 18:09:12][debug] sql-->UPDATE `pa_marathon`  SET `out_trade_no`='126832550120151102180911'  WHERE ( `id` = '8475' )
+[2015-11-02 18:09:21][debug] begin notify
+[2015-11-02 18:09:22][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"lCmWoM3JdOBLzCP3","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102180911","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"F5A25862E901AE011823F359085DACE8","time_end":"20151102180919","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429415469"}
+[2015-11-02 18:09:22][debug] call back test:订单查询成功
+[2015-11-02 18:09:22][debug] {"appid":"wx7036b843ea6a6857","bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"daee31afx9vd6txzugh7t6lm851sor4z","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102180911","result_code":"SUCCESS","return_code":"SUCCESS","sign":"58D1EFCF3C92679801A23C36C5CF9BD2","time_end":"20151102180920","total_fee":"4","trade_type":"APP","transaction_id":"1008400362201511021429415469"}
+[2015-11-02 18:09:22][debug] notifySql-->UPDATE `pa_marathon`  SET `transaction_id`='1008400362201511021429415469',`total_fee`='4',`openid`='oMSUaxBbLBX0jW3ohKIaZqO-0omU',`ispay`=1  WHERE ( `out_trade_no` = '126832550120151102180911' )
+[2015-11-02 18:09:22][debug] 成功支付4分

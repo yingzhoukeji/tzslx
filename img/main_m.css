@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.m_sec {width:31.5%; margin-right:2.75%;}
+.m_sec h2 {padding:0 20px;}
+.m_sec_txt h3 { font-weight:400; }
+.m_sec_txt p {height:65px; overflow:hidden; font-size:1em; }
+.m_sec_temp .m_sec_txt p {height:1.6em; overflow:hidden;}
+.m_wrap .inner { width:93.75%; max-width:920px; }
+.mv_pager_wrap { width:100%; margin-left:-50%;}
+.mv_pager {width:93.75%; max-width:920px; margin:0 auto;}
+/* 타블렛 이하 ~ 모바일 가로 */
+@media all and (max-width:767px) {
+	.m_wrap {height:auto;}
+	.m_wrap > .inner {width:100%;}
+	.mv_wrap {height:230px;}
+	.mv_img {height:230px;}
+	.mv li {height:230px;}
+	.mv_pager_wrap {top:140px;}
+	.mv_txt {
+		height:90px; padding-top:43px; 
+		background:url("mv_txt_m.png") no-repeat left 43px; 
+		background-size:auto 90px;
+	}
+	.m_content{position:relative; bottom:auto; left:auto; background:none;}
+	.m_content .inner {width:100%;}
+	.m_mb_mid { display:block; }
+	.m_mb_mid img {width:26px; vertical-align:middle;}
+	.m_operating { padding:20px 0; background:#2e322c; text-align:center; color:#ccc; }
+	.m_mb_info {overflow:hidden;}
+	.m_mb_info li {float:left; width:50%; box-sizing:border-box; }
+	.m_mb_info a {display:block; background:#7d7d7d; color:#fff; font-weight:600; height:60px; line-height:60px; text-align:center; }
+	.m_mb_info li:first-child a {border-right:1px solid #9f9f9f;}
+	.m_sec { height:110px; float:none; width:100%; position:relative; overflow:hidden; border-top:5px solid #ccc;}
+	.m_sec:first-child {border-top:0;}
+	.m_sec h2, .m_sec.m_sec_green h2 {height:20px; line-height:15px; background:transparent; position:absolute; top:30px; left:40%; margin-left:-14px; padding:0; z-index:99;}
+	.m_sec h2 img {display:none;}
+	/*.m_sec h2 a { display:block; height:100%; background:url("m_tit_m.png") no-repeat; background-size:100% auto; }*/
+	.m_sec h2 a { display:block; height:100%;}
+    .img_mid samp{display:none}
+	.m_sec h2 .m_tit01 { background-position:0 0;}
+	.m_sec h2 .m_tit02 { background-position:0 -27px;}
+	.m_sec h2 .m_tit03 { background-position:0 -53px;}
+	.m_sec_photo span {opacity:0.4; height:110px;}
+	.m_sec_photo a {cursor:default; pointer-events:none;}
+	.m_sec_txt, .m_sec.m_sec_green .m_sec_txt {position:absolute; left:0; top:60px; background:none; width:100%; padding:0; height:auto; }
+	.m_sec_txt a > p {display:none;}
+	.m_sec_txt h3 {text-align:center; z-index:99; font-weight:600; color:#fff;}
+
+	/* 추가 */
+	.m_sec_temp {background:#408447; padding:25px 3.125%; box-sizing:border-box; height:auto;}
+	.m_sec_temp.m_sec h2 {display:none;}
+	.m_sec_temp .m_sec_txt h3 {font-size:1em; text-align:left; margin-bottom:3px; font-weight:400; line-height:1.65em; padding-left:5px; text-indent:-5px;}
+	.m_sec_temp .m_sec_txt h3:before {content:'· ';}
+	.m_sec_temp .m_sec_photo {display:none;}
+	.m_sec.m_sec_temp .m_sec_txt {position:relative; top:0; width:auto;}
+	.m_sec_temp .m_sec_txt p {height:auto; margin-bottom:3px; padding-left:5px; text-indent:-5px;}
+	.m_sec.m_sec_temp .m_sec_txt p a {color:#fff;}
+}
+
+/* 타블렛 이하 ~ 모바일 세로 */
+@media all and (max-width:480px) {
+.xiaolanmu,.xiaodaoh{width:100%; padding:30px 0 0 0 ; margin:0; overflow:hidden; }
+}

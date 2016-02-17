@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2015台州蓝协成绩表</title>
+<style type="text/css" media="screen"> 
+@media print{ 
+.print {display:block;} 
+.notPrint {display:none;} 
+} 
+</style> 
+<script language="javascript"> 
+function preview() 
+{ 
+bdhtml=window.document.body.innerHTML; 
+sprnstr="<!--startprint-->"; 
+eprnstr="<!--endprint-->"; 
+prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+window.document.body.innerHTML=prnhtml; 
+window.print(); 
+} 
+</script>
+<style>
+body,form{ background:#fff}
+.dywk{ width:640px; margin:0 auto; overflow:hidden; text-align:center;  line-height:30px; background:#fff;padding:5% 0 0 0;}
+.biaodan{ width:560px; text-align:left;  overflow:hidden; margin:0; padding:0; height:792px; border:#f3e727 10px solid; background:url(http://www.tzslx.com/regiser/home/css/1122.jpg) no-repeat}
+.biaodan h1{ margin:0 auto; text-align:center;}
+.biaodan .mz{font-family:'微软雅黑', '黑体', '宋体'; font-size:35px; clear:both; color:rgba(255,255,255,1.00); margin:325px 0 0 150px; font-weight:900; width:410px;}
+.biaodan .mzhs{font-family:'微软雅黑', '黑体', '宋体'; width:320px; font-size:45px; clear:both; color:rgba(255,255,255,1.00); margin:230px 0 0 230px; font-weight:900;}
+</style>
+</head>
+
+<body>
+<form id="WebForm1" method="post" > 
+<center><!-- 这个部分不打印！ --></center> 
+<div class="dywk">
+
+<!--startprint--> 
+<div class="biaodan" style=" margin:0 auto; background:url(http://www.tzslx.com/regiser/home/css/1122.jpg) no-repeat">
+   <div class="mz">{$info.name}</div>
+   <div class="mzhs">{$info.scoretime}</div> 
+</div>
+<!--endprint--> 
+
+</div>
+<p style="text-align:center; width:100%; margin:20px 0;"> 
+<input type="button" name="print" value="预览并打印" onclick="preview()" style="padding:10px 20px; background:rgba(0,0,0,1.00); color:#FFFFFF"> 
+</p>
+<!-- 
+<style> @media Print { .Noprn { DISPLAY: none }} </style> 
+<p class="Noprn">本部分以下不被打印</p> 
+<div id="datagrid"> 
+打印 
+</div> 
+<input class="Noprn" type="button" onclick="window.print()" value="print">
+-->
+</form> 
+</body>
+</html>

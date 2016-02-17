@@ -1,0 +1,70 @@
+@import url("reset.css");
+@import url("common.css");
+
+/*공통*/
+.p {display:block;}
+.m {display:none;}
+
+
+/* 국제소식 */
+.board-type01 {border:1px solid #e5e5e5;border-bottom:0;}
+.board-type01 li {position:relative;padding:20px 29px;min-height:110px;border-bottom:1px solid #e5e5e5;}
+.board-type01 li .img {float:left;}
+.board-type01 li .subject {padding:15px 85px 0 30px;height:32px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.board-type01 li .subject a {color:#000;font-weight:bold;}
+.board-type01 li .date {position:absolute;top:35px;right:30px;}
+.board-type01 li .summ {padding-left:250px;}
+.board-no {float:left;width:100%;text-align:center;padding:100px 0;border-top:2px solid #e5e5e5;}
+
+/*농사이야기*/
+.dNum-0302 .tab-type01 {margin-bottom:40px;}
+.dNum-0302 .articleView {margin-top:140px;}
+.board-type02 {float:left;width:100%;border-left:1px solid #e5e5e5;}
+.board-type02 li {float:left;width:33.24%;}
+.board-type02 li div {width:100%;padding:29px 0 25px;border:1px solid #e5e5e5;border-left:0;border-top:0;}
+.board-type02 li.btop div {border-top:1px solid #e5e5e5;}
+.board-type02 li .img {position:relative;margin:0 29px 20px;text-align:center;overflow:hidden;}
+.board-type02 li .img img {max-width:250px;width:100%;}
+.board-type02 li .subject {margin:0 29px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.board-type02 li .subject a {font-size:1.1em;font-weight:bold;color:#000;}
+
+/*동영상자료*/
+.dNum-0303 .tab-type01 {margin-bottom:40px;}
+.dNum-0303 .movieView {width:100%;float:left;margin-bottom:30px;border:1px solid #e5e5e5;}
+.dNum-0303 .movieView .player {float:left;width:60%;height:380px;padding:40px;border-right:1px solid #e5e5e5;}
+.dNum-0303 .movieView .subject {padding:40px 40px 18px 72%;font-size:1.3em;color:#000;}
+.dNum-0303 .movieView .summ {padding:0 40px 0 72%;}
+.board-type03 {float:left;width:100%;border-left:1px solid #e5e5e5;}
+.board-type03 li {float:left;width:33.33%;}
+.board-type03 li div {width:100%;padding:29px 0 25px;border:1px solid #e5e5e5;border-left:0;}
+.board-type03 li .img {position:relative;margin:0 29px 20px;text-align:center;overflow:hidden;}
+.board-type03 li .img a {position:absolute;top:0;left:0;width:100%;height:100%;background:url("img_movie_btn.png") no-repeat center center;}
+.board-type03 li .img img {max-width:250px;width:100%;}
+.board-type03 li .subject {margin:0 29px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.board-type03 li .subject a {font-size:1.1em;font-weight:bold;color:#000;}
+
+/*온라인샵*/
+.dNum-0302 .section01 {float:left;margin-bottom:100px;}
+.dNum-0302 p.on_tit {color:#4a4593;font-size:2.3em;font-weight:bold;line-height:1.3em;padding:50px 0 20px;}
+.board-type04 {width:100%;}
+.board-type04:after {content:"";display:block;clear:both;}
+.board-type04 li {float:left;width:32%;margin:0 15px 15px 0;border:1px solid #e5e5e5;}
+.board-type04 li.mgn {margin-right:0;}
+.board-type04 li div {width:100%;}
+.board-type04 li .img {position:relative;text-align:center;overflow:hidden;}
+.board-type04 li .img img {max-width:295px;width:100%;}
+.board-type04 li .subject {font-weight:bold;color:#000;font-size:1.4em;background-color:#f9f9f9;padding:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.board-type04 li .price {color:#f23333;font-size:1.3em;font-weight:bold;background-color:#f9f9f9;padding:0 25px 25px;}
+
+.dNum-0302 p.tit {
+	color:#333;font-size:1.3em;font-weight:bold;line-height:1.4em;
+	background:url("img_arr_down.gif") 0 0 no-repeat;padding-left:75px;
+}
+.dNum-0302 p.tit span {display:block;}
+.dNum-0302 p.tit a {display:block;width:148px;margin-top:8px;}
+
+
+
+@media all and (max-width:1190px) {
+	.board-type04 li {width:31.7%;}
+}

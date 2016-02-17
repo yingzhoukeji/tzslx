@@ -1,0 +1,6 @@
+[2015-11-11 18:22:10][debug] begin notify
+[2015-11-11 18:25:13][debug] begin notify
+[2015-11-11 18:25:13][debug] query:{"appid":"wx7036b843ea6a6857","attach":[],"bank_type":"CFT","cash_fee":"4","fee_type":"CNY","is_subscribe":"N","mch_id":"1268325501","nonce_str":"1OPr0CJzrvtZ2uy2","openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","out_trade_no":"126832550120151102180911","result_code":"SUCCESS","return_code":"SUCCESS","return_msg":"OK","sign":"BFD36CC4CBCA964DAEC8499F2AA704F6","time_end":"20151102180919","total_fee":"4","trade_state":"SUCCESS","trade_type":"APP","transaction_id":"1008400362201511021429415469"}
+[2015-11-11 18:25:13][debug] call back test:订单查询成功
+[2015-11-11 18:25:13][debug] {"openid":"oMSUaxBbLBX0jW3ohKIaZqO-0omU","trade_type":"APP","return_code":"SUCCESS","time_end":"20151111182512","mch_id":"1268325501","cash_fee":"4","is_subscribe":"N","bank_type":"CFT","out_trade_no":"126832550120151102180911","transaction_id":"1008400362201511021429415469","total_fee":"4","appid":"wx7036b843ea6a6857","noncestr":"20150531233956996351","result_code":"SUCCESS"}
+[2015-11-11 18:25:13][debug] -->已经入库，无需再入库

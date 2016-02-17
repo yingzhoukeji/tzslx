@@ -1,0 +1,30 @@
+http://www.tzslx.com:8080/index.php/conist/Public/index
+帐号：hylxinlang@sina.cn
+密码：123456
+
+===============
+
+网站模板目录
+
+C:\wamp\www\tzslx\Application\Home\View\default
+
+Base       头部代码  n
+Index      首页代码  y
+Member     会员代码  n
+Message    留言代码  y
+News       新闻代码  y
+Page       单页代码  y
+Product    产品代码  y
+Register   报名代码  y
+
+参考页面：www.zjksty.com
+
+===============
+
+微信
+C:\wamp\www\tzslx\wx       首页文件
+C:\wamp\www\tzslx\wx\html  内容文件
+C:\wamp\www\tzslx\wxhd     活动首页
+C:\wamp\www\tzslx\regiser  报名首页
+
+参考 微信号搜索 跨世体育

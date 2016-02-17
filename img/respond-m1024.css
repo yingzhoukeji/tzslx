@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+
+@media all and (max-width:1200px) {/* 1200px - 1024 해상도 사이 (어중간한 창사이즈 일때) */
+	.container {width:100%;}
+	#header .btn-allview {width:auto;position:relative;left:0;top:-70px;float:right;}
+	#header .allview ul {width:100%;}
+	#header .allview li {width:16%;}
+	#header .allview li.last {width:20%;}
+}
+/* Tablet device */
+@media all and (max-width:1024px) {
+	#header h1 {padding-left:30px;}
+	#header .gnbWrap {display:none;}
+	#header .btn-allview {top:0;}
+	#header .btn-allview a {display:block;width:70px;height:70px;background:url("img_allview_btn.gif") no-repeat center;}
+	#contents .container {margin:0;}
+	#contents .subVisual {display:none;}
+	#contents .location {margin-top:0;}
+	#contents #lnb {display:none;}
+	#contents .subContents {padding:0 20px 80px;min-height:0;}
+	.subContents h3 {z-index:200;position:relative;margin-top:-78px;}
+	.subContents h3.skip_txt {text-indent:0;}
+	#footer .container {background:none;}
+	#footer .fMenu, #footer .copyright {padding-left:30px;}
+	#footer address {padding-left:30px;width:75%;}
+	#footer address span {padding-bottom:5px;}
+	#footer .language, #footer .linkWrap {right:30px;}
+
+	/*main*/
+	/*.mainVisual .vList li {background-position:center 0 !important;}*/
+	.mainVisual .vList .vNum01 {background-image:url("img_visual01_bg1024.jpg");}
+	.mainVisual .vList .vNum02 {background-image:url("img_visual02_bg1024.jpg");}
+	.mainVisual .vList .vNum03 {background-image:url("img_visual03_bg1024.jpg");}
+	.mainVisual .vList .vNum04 {background-image:url("img_visual04_bg1024.jpg");}
+	.mainVisual .vList .vNum05 {background-image:url("img_visual05_bg1024.jpg");}
+	.mainVisual .vList .vNum06 {background:url("img_visual06_bg1024.jpg") no-repeat center center;}
+	.mainVisual .vList .vNum07 {background:url("img_visual07_bg1024.jpg") no-repeat center center;}
+	.mainVisual .vList .vNum08 {background:url("img_visual08_bg1024.jpg") no-repeat center center;}
+	.mainVisual .vList .vNum09 {background:url("img_visual09_bg1024.jpg") no-repeat center center;}
+	.mainVisual .vList .vNum10 {background:url("img_visual10_bg1024.jpg") no-repeat center center;}
+	.mainVisual .vList .vNum11 {background:url("img_visual11_bg1024.jpg") no-repeat center center;}
+	
+	
+	/*.mainVisual .vList_t .vNum01_t {background-image:url("img_visual01_bg1024.jpg");}
+	.mainVisual .vList_t .vNum02_t {background-image:url("img_visual02_bg1024.jpg");}
+	.mainVisual .vList_t .vNum03_t {background-image:url("img_visual03_bg1024.jpg");}
+	.mainVisual .vList_t .vNum04_t {background-image:url("img_visual04_bg1024.jpg");}
+	.mainVisual .vList_t .vNum05_t {background-image:url("img_visual05_bg1024.jpg");}*/
+	
+	
+	.main #contents .container div {width:32.5%;}
+	.main #contents .container div h4 {margin:0 6% 15px;}
+	.main #contents .container div ul {margin:0 6%;}
+	.main #contents .container div .more {right:6%;}
+	.main #contents .container .detail01 {margin-left:1.2%;}
+	.main #contents .container .detail04 {clear:both;width:100%;margin-top:50px;background:url("img_dotline_bg.gif") repeat-x 0 0;}
+	.main #contents .container .detail04 ul {margin:0;padding-top:20px;height:155px;}
+	.main #contents .container .detail04 li {float:left;width:33.3%;height:135px;background:url("img_dotline_bg2.gif") repeat-y right center;}
+	.main #contents .container .detail04 li.last {background:none;}
+	.main #contents .container .detail04 li a {height:135px;padding:0 24px;width:auto;}
+	.main #contents .container .detail04 li a span.title {padding:17px 0 43px;}
+	.main #contents .container .detail04 li.mNum04 a {background-position:90% 22px;}
+	.main #contents .container .detail04 li.mNum05 a {background-position:90% 22px;}
+	.main #contents .container .detail04 li.mNum06 a {background-position:88% 22px;}
+	.main #contents .pList {min-height:0;background:url("img_dotline_bg.gif") repeat-x 0 0;}
+	.main #contents .pList h4 {margin:30px 3% 0;}
+	.main #contents .pList ul {float:left;width:101%;padding:0 0 20px;}
+	.main #contents .pList li {height:147px;padding-top:20px;background:url("img_pList_bg.gif") repeat-x 0 bottom;}
+
+	/*제품소개*/
+	.dNum-0101 .section02, .dNum-0102 .section02, .dNum-0103 .section02, .dNum-0104 .section02 {float:none;margin:10px 0 50px;}
+	.subContents .m.quick_menu {width:auto;padding-top:10px;}
+	.subContents .m.quick_menu:after {content:"";display:block;clear:both;}
+	.pd_info {border:0;}
+	.pd_info .left {width:100%;}
+	.pd_info .right {width:100%;min-height:200px;border:0;padding:0;clear:both;}
+	.pd_info div .big_img {margin:0 20px 15px;min-height:200px;}
+	.pd_info .left #pd_img {position:relative;max-width:374px;/*height:81px;*/float:right;left:-50%;/*border-left:1px solid #e5e5e5;*/}
+	.pd_info .left #pd_img li {position:relative;float:left;left:50%;width:61px;height:60px;border-top:1px solid #e5e5e5;border-left:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+	.pd_info .left #pd_img li.bdt {border-top:1px solid #e5e5e5;}
+	.pd_info .left #pd_img li.last {border-right:1px solid #e5e5e5;}
+	.pd_info .left #pd_img li.bdt.last {border-right:0;}
+	.pd_info .left #pd_img li a {display:block;width:60px;height:60px;position:absolute;top:0;left:0;}
+	.pd_info .left #pd_img li.on a {border:1px solid #539fca;top:-1px;left:-1px;}
+	.pd_name, .pd_function, .pd_performance {margin-left:0;}
+	.pd_performance {width:100%;max-width:928px;margin-top:20px;}
+	.pd_performance ul {width:100%;}
+	.pd_performance ul li {width:14.2%;}
+	.liquid1 {display:none;}
+	.liquid {
+		display:block;
+		border-bottom:1px solid #e5e5e5;
+		padding:25px 0;
+	}
+	.liquid .wrapper {width:100%;}
+	.liquid .wrapper:after {content:"";display:block;clear:both;}
+	.liquid span {
+		display:block;float:left;
+		width:11px;height:21px;
+		padding-top:68px;cursor:pointer;
+	}
+	.liquid ul li {width:150px;text-align:center;margin:0 5px;}
+	.liquid ul li em {display:block;width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;}
+	/*.liquid .wrapper {padding-top:12px;}*/
+	.liquid h4 {color:#333;font-size:1.8em;line-height:1em;border-bottom:2px solid #e5e5e5;padding-bottom:20px;}
+
+	.pd_list ul {border:0;}
+	.pd_list ul li p.pd_img {margin:0 5px;}
+	.pd_list ul li dl {margin:0 5px;}
+	.pd_list ul li div, .pd_list ul li.btop div {border:0;}
+	.pd_view .p {display:none;}
+	.pd_view .m {display:block;}
+	.pd_view .p.tab-type01 {display:block;}
+	.pd_view .mobileSelect {display:none;}
+	.pd_view .tab1 img {max-width:928px;}
+	.pd_view .tab2 {display:none;}
+	.subContents .p.quick_menu {display:none;}
+	.subContents .quick_menu {display:block;position:relative;top:0;left:0;width:215px;margin:0 auto;padding-top:80px;}
+	.subContents .quick_menu ul {width:100%;}
+	.subContents .quick_menu ul li {float:left;margin-right:5px;}
+	.subContents .quick_menu ul li.last {margin-right:0;}
+	
+	.allpd_list ul {border:0;}
+	.allpd_list ul li {width:24.8%;padding:30px 0;border:0;}
+	.allpd_list ul li.btop {border:0;}
+	#contents .allpd_list ul li.intro {width:99.5%;min-height:30px;margin-bottom:10px;border:1px solid #e5e5e5;}
+	.allpd_list ul li.intro p {float:left;min-width:120px;margin:0 0 0 30px;}
+	.allpd_list ul li.intro dl {float:left;background:none;padding-top:3px;margin:0 10px;}
+	.allpd_list ul li.intro dl span {display:inline;}
+	.allpd_list ul li.intro dl dt {float:left;padding:0;margin-right:10px;}
+	.allpd_list ul li.intro dl dd {display:none;float:left;padding:0;margin-right:10px;}
+	.allpd_list ul.tractor li.intro p {min-width:178px;}
+	.allpd_list ul.diesel_engine li.intro p {min-width:140px;}
+	
+
+
+	/*회사소개*/
+	.dNum-0201 .pic {padding-bottom:70px;}
+	.dNum-0201 p.sign {top:320px;left:30px;}
+	.dNum-0201 .subContents div.f_l {margin:50px 0 0 30px;}
+	.dNum-0201 div.txt p {padding-bottom:20px;}
+	.dNum-0202 .p.h_list {display:none;}
+	.dNum-0202 .t.h_list {display:block;}
+	.dNum-0202 .h_list li.right, .dNum-0202 .tab2 .h_list li.right {background:url("dot_line2.gif") left top repeat-y;}
+	.dNum-0203 .p.map1 {display:none;}
+	.dNum-0203 .m.map1 {display:block;}
+	.dNum-0204 .symbol_mark ul li {width:48%;margin-right:20px;}
+	.dNum-0205 .list li p.f_l {width:99%;background:none;}
+	.dNum-0205 .list li div {clear:both;margin:0;border:0;}
+	.dNum-0205 .list li.clear ul {clear:both;}
+	
+
+	/*홍보센터*/
+	.board-no {/*padding:60px 0;*/}
+	.dNum-0303 .movieView {border-width:1px 0;padding-bottom:20px;}
+	.dNum-0303 .movieView .player {float:none;width:100%;height:330px;padding:40px 0;border:0;}
+	.dNum-0303 .movieView .subject, .dNum-0303 .movieView .summ {padding:0 10% 20px;}
+	.board-type01 li .subject {padding-top:0;}
+	.board-type04 li {width:33.33%;margin-right:0;border:0;}
+	.board-type04 li .subject {padding:25px 20px;margin:0 7px;}
+	.board-type04 li .price{margin:0 7px;}
+	.p.board-type04, .p.on_tit {display:none;}
+	.m.board-type04, .m.on_tit {display:block;}
+
+	/*고객센터*/
+	.dNum-0402 .tab-type02 li {left:20px;}
+	.dNum-0403 .txt {position:relative;top:10px;right:0;float:right;}
+
+	/*채용정보*/
+	.tab_cont p.tit {padding-top:25px;}
+	.tab_cont .list li p.f_l {width:99%;}
+	.tab_cont .list li div {clear:both;margin:0;border:0;}
+	.tab_cont .list li.clear ul {clear:both;}
+	.dNum-050203 .tab_cont div .p.img {display:none;}
+	.dNum-050203 .tab_cont div .m.img {display:block;}
+	
+	/*멤버쉽*/
+	.dNum-060203 .section01 {padding-bottom:80px;}
+
+
+}
+
+/* Small tablet landscape */
+@media all and (max-width:900px) {
+	.dNum-0202 .section01 dl {top:40px;}
+	.dNum-0202 .section01 dl dt {width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;padding-bottom:10px;}
+	.dNum-0202 .section01 dl dd {font-size:1em;line-height:1.2em;}
+}
+
+@media all and (max-width:807px) {
+	.dNum-0607 .section02 ul li {width:100%;}
+	.dNum-0403 .searchFrm select {width:22%;}
+	.dNum-0403 .searchFrm input.wd1 {width:30%;}
+}
+
+@media all and (max-width:800px) {
+	.mainVisual .vList li {background-position:center center !important;}
+	.mainVisual .vList li img {margin-top:140px;}
+	.dNum-0201 div.pic {margin-top:80px;}
+	.dNum-0204 .color dl dd {width:97%;}
+	.dNum-0202 .section01 dl {top:20px;}
+	.history_list li div {padding:30px 0 60px 20px;}
+	.dNum-0201 p.sign {top:370px;}
+}
+
+
+
+/* small tablet device (amazone kindle or etc 767~641 ...) */
+@media all and (max-width:767px) {
+	#contents .pList li {width:33.33%;}
+	#contents .pList h4 {display:none;}
+	.main #contents .pList ul {padding:30px 0 20px;}
+	.pd_list ul li {width:50%;}
+	.pd_performance ul li {width:20%;}
+
+	.board-type02 {border:0;}
+	.board-type02 li div {padding:18px 0 5px;border:0 !important;}
+	.board-type02 li.btop div {padding:18px 0 5px;}
+	.board-type02 li .img, .board-type02 li .subject {margin:0 10px 10px;}
+
+	.board-type03 {border:0;}
+	.board-type03 li div {border:0;padding:18px 0 10px;}
+	.board-type03 li .img, .board-type03 li .subject {margin:0 10px 10px;}
+	
+	.dNum-0201 .subContents div.f_l {margin:50px 0 0 30px;}
+	.dNum-0201 div.pic {width:45%;}
+	
+	.dNum-0404 .list {border:0;}
+	.dNum-0404 .list li div {border:0 !important;padding:18px 0 10px;}
+	.dNum-0404 .list li .img, .dNum-0404 .list li .subject {margin:0 10px 10px;}
+	.dNum-0405 table td textarea, .dNum-060702 table td input.wd04 {width:96%;}
+	.dNum-0405 table td input.wd03 {width:40%;}
+	.dNum-0405 table td .line-next {display:block;width:100%;height:6px;}
+
+	.dNum-0501 .section01 div ul li {width:100%}
+	.dNum-0501 .section01 div ul li dl dt {float:left;width:25%;padding-left:10px;margin-right:10px;}
+	.dNum-0501 .section01 div ul li dl dd {float:left;width:70%;}
+	.dNum-0501 .section01 div ul li dl dd span {display:inline;}
+
+
+	/*멤버쉽*/
+	.dNum-060102 table td .line-next {display:block;width:100%;height:6px;}
+	.dNum-060102 table td input.wd03 {width:43%;}
+	.dNum-060102 table td select.swd01 {width:40%;}
+	ul.tab_agree li {width:32.5%;}
+	.dNum-060202 table td .line-next {display:block;width:100%;height:6px;}
+	.dNum-060202 table td input.wd03 {width:43%;}
+	.dNum-060202 table td select.swd01 {width:40%;}
+	.dNum-0603 .box2 {padding:0 20px;}
+	.dNum-0603 .box2 dl dd input {width:25%;}
+	.dNum-0603 .box2 dl dd select {width:20%;}
+	.dNum-0607 .section01 {background:none;padding:0;}
+	.dNum-060702 table td textarea, .dNum-060702 table td input.wd04 {width:96%;}
+	.dNum-060702 table td input.wd03 {width:40%;}
+	.dNum-060702 table td .line-next {display:block;width:100%;height:6px;}
+}

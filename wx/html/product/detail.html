@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>跨世体育视频</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/frozen.css" />
+		<link rel="stylesheet" href="../../css/app.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/path_menu.css"/>
+		<script src="../../js/weixin.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<style>
+				.ui-notice{top: 0;z-index: -1;}
+				.ui-dialog{margin: 0!important;padding: 0!important;  background: rgba(0,0,0,.65);opacity: 0.8;}
+		</style>
+		<style>
+
+.mui-content{background:#FFF;}
+			
+			
+			.product-info{margin: 5px;border: 1px solid #ddd;border-radius: 3px;}
+			.product-img{width: 100%;padding: 5px;}
+			.product-img img{height: 100%;width: 100%;}
+			.product-title{font-size: 14px;}
+			.product-title span{font-size: 13px;}
+			.company{font-size: 12px;}
+			.mui-table-view-cell{
+				 padding: 5px 15px;
+				 font-size: 12px;
+			}
+			#msglist .mui-table-view-cell{
+				 padding: 15px 15px;
+				 font-size: 12px;
+			}
+			.mui-table-view-divider{background-color: #ddd;}
+			.message span{width: 50%;font-size: 12px;text-align: center;}
+			.message span:first-child{border-right: 1px solid #ddd;}
+			.content,.canshu{
+				  font-size: 12px;
+				  padding: 10px;
+				  background: #fff;
+			}
+			
+			.mui-content{position: fixed;left: 0;right: 0;top:0;bottom: 0;overflow-y: auto;}
+			::-webkit-scrollbar{width: 0px;}
+			.content img{display: none;width: 100%!important;}
+			.content table{width: 100%!important;overflow-x: hidden;}
+			.msgPanel{position: fixed;width: 100%;bottom: 0;top: 0;z-index: 100000;}
+		</style>
+	</head>
+	<body>
+		<!-- header class="mui-bar mui-bar-nav">
+			<a id="back" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title"></h1>
+		</header -->
+
+		<div class="mui-content mui-scroll">
+		<div class="shangbiao"><img src="../../images/logo.png"></div>
+			<!-- div class="product-img">
+				<img id="img">
+			</div -->
+			
+			<ul class="mui-table-view" style="border: 1px solid #ddd;margin: 5px;">
+				<!--li class="mui-table-view-cell mui-table-view-divider" style="color:#006c36; text-shadow:rgba(255,255,255,1.00) 2px 1px 0; font-size:16px;">产品信息</li>
+				<li class="mui-table-view-cell mui-group-list-item">名称：<span id="title">MAX-515-CB　/ 高速厚料平缝机系列</span></li>
+				<li class="mui-table-view-cell mui-group-list-item">地址：<span>浙江 台州 椒江区 滨海工业园区 B区 海丰路2229号</span></li -->
+				<li class="mui-table-view-cell mui-group-list-item message"><span class="mui-icon mui-icon-phone"> <a href="tel:057689811731">拨打电话</a></span><span class="mui-icon mui-icon-chat" id="sendmsg"> 给我们留言</span></li>
+			</ul>
+			<ul class="mui-table-view" style="border: 1px solid #ddd;margin: 5px;">
+				<li class="mui-table-view-cell mui-table-view-divider" style="color:#33276f; text-shadow:rgba(255,255,255,1.00) 2px 1px 0; font-size:16px;">视频描述</li>
+			</ul>
+			<div class="canshu" style="padding:10px 0 50px 10px;">
+				
+			</div>
+			<ul class="mui-table-view" style="border: 1px solid #ddd;margin: 5px;">
+				<li class="mui-table-view-cell mui-table-view-divider" style="color:#33276f; text-shadow:rgba(255,255,255,1.00) 2px 1px 0; font-size:16px;">视频</li>
+			</ul>
+			<div class="content" style="padding:10px 0 50px 10px;">
+				
+			</div>
+			
+			<ul class="mui-table-view" style="border: 1px solid #ddd;margin: 5px 0 80px 0;" id="msglist">
+				<li class="mui-table-view-cell mui-table-view-divider" style="color:#33276f; text-shadow:rgba(255,255,255,1.00) 2px 1px 0; font-size:16px;">留言列表</li>
+				<!--<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<div class="ui-avatar mui-media-object mui-pull-left">
+                        	<span style="background-image:url(https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2724301190,3302241391&fm=58)"></span>
+                    	</div>
+						<div class="mui-media-body">
+							幸福
+							<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+						</div>
+					</a>
+				</li>-->
+				
+			</ul>
+		</div>
+		<!--path菜单-->
+	    <div id="pathmenu" class="menu_button fixed display_none" style="z-index: 0; line-height: 2.5em; display: block;"><span>菜单</span></div>
+	    <div class="menu_button fixed display_none" id="home"><i class="mui-icon mui-icon-home"></i>
+	
+	        <div class="menu_text"><span>主页</span></div>
+	    </div>
+	    <div id="tel" class="menu_button fixed display_none"><i class="mui-icon mui-icon-phone"></i>
+	        <div class="menu_text"><span>联系</span></div>
+	    </div>
+	    <div class="menu_button fixed display_none" id="map"><i class="mui-icon mui-icon-location"></i>
+	
+	        <div class="menu_text"><span>导航</span></div>
+	    </div>
+<nav class="mui-bar mui-bar-tab">
+    <a class="mui-tab-item" id="syeh" href="/wx/">
+        <span class="mui-icon iconfont">&#xe64a;</span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" id="ddlbm" href="/wx/html/news/categary.html">
+        <span class="mui-icon iconfont">&#xe688;</span>
+        <span class="mui-tab-label">新闻中心</span>
+    </a>
+    <a class="mui-tab-item mui-active" id="jshdkw" href="/wx/html/product/categary.html">
+        <span class="mui-icon iconfont">&#xe615;</span>
+        <span class="mui-tab-label">视频展示</span>
+    </a>
+    <a class="mui-tab-item" id="ddltg" href="/wxhd/list.html">
+        <span class="mui-icon iconfont">&#xe63d;</span>
+        <span class="mui-tab-label">活动中心</span>
+    </a>
+    <a class="mui-tab-item" id="ddlxw" href="/wx/lxwm.html">
+        <span class="mui-icon iconfont">&#xe63f;</span>
+        <span class="mui-tab-label">联系我们</span>
+    </a>
+</nav>
+	    <div class="pathModel"></div>
+		<div class="ui-dialog ui-dialog-notice show"><div class="ui-dialog-cnt"><i class="ui-loading-bright"></i><p>加载中...</p></div></div>
+		
+		<script type="text/javascript" src="../../js/common.js" ></script>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/zepto.min.js" ></script>
+		<script src="../../js/path.js"></script>
+		<script>
+		 	$(function(){
+		 		var id=GetQueryString("id");
+		 		getProduct(id);
+				getmsg(id);
+				initWeixin();
+		 		$("#home").on("tap",function(){
+		 			
+					window.location.href=indexUrl;
+				});	
+				$("#tel").on("tap",function(){
+					window.location.href="tel:4009260070";
+				});	
+				$("#map").on("tap",function(){
+					openMap();
+				});
+				$("#sendmsg").on("tap",function(){
+					window.location.href="sendMsg.html?id="+id;
+				});
+			$("#syeh").on("tap",function(){
+					window.location.href="/wx/";
+			});
+			$("#ddlbm").on("tap",function(){
+				window.location.href="/wx/html/news/categary.html";
+			});
+			$("#jshdkw").on("tap",function(){
+				window.location.href="/wx/html/product/categary.html";
+			});
+			$("#ddltg").on("tap",function(){
+				window.location.href="/wxhd/list.html";
+			});
+			$("#ddlxw").on("tap",function(){
+				window.location.href="/wx/lxwm.html";
+			});
+		 	});
+			function getProduct(id){
+				var url=serverUrl+"/productDetail?id="+id+"&callback=?";
+				$.getJSON(url,function(json){
+					$(".ui-dialog").hide();
+					console.log(json);
+					var title=json.title;
+					var savepath=json.savepath;
+					var summary=json.summary;
+					var content=json.content;
+					var cid=json.cid;
+					$("#img").attr("src",picUrl+savepath);
+					$(".mui-title").text(title);
+					$("#title").text(title);
+					$("title").text("台州蓝协--"+title);
+					$(".canshu").text(summary);
+					$(".content").html(content);
+					$(".content").find("img").each(function(){
+						$(this).attr("src",picUrl+$(this).attr("src"));
+						$(this).show();
+					});
+					$("#back").on("click",function(){
+						var from=GetQueryString("from");
+						if(from=="0"){
+							window.location.href="list.html?id="+cid;
+						}else{
+							window.location.href="search.html";
+						}
+			 			
+			 		});
+				});
+			}
+			function getmsg(id){
+				var url=serverUrl+"/getmsg?productid="+id+"&callback=?";
+				$.getJSON(url,function(json){
+					
+					for(var i=0;i<json.length;i++){
+						var msg=json[i];
+						var username=msg.username;
+						var headimgurl=msg.headimgurl;
+						if(headimgurl==""){
+							headimgurl="../../images/tx.jpg";
+						}
+						var content=msg.content;
+						var html='';
+						html+='<li class="mui-table-view-cell mui-media">';
+							html+='<a href="javascript:;">';
+								html+='<div class="ui-avatar mui-media-object mui-pull-left">';
+									html+='<span style="background-image:url('+headimgurl+')"></span>';
+								html+='</div>';
+								html+='<div class="mui-media-body">';
+									html+=username;
+									html+='<p>'+content+'</p>';
+								html+='</div>';
+							html+='</a>';
+						html+='</li>';
+						$("#msglist").append(html);
+					}
+				});
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*********************************************************/
+/*	reset */
+/*********************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none}
+input,select,textarea,button {vertical-align:middle;border:0;font-family:"微软雅黑", "黑体", "宋体",  'Nanum Gothic', 'NanumGothicWeb';}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {font-size:0.754em;line-height:1.5em; font-family:"微软雅黑", "黑体", "宋体", 'Nanum Gothic', 'NanumGothicWeb', Dotum, Gulim, sans-serif;color:#666;-webkit-text-size-adjust:none;}
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+table {border-collapse:collapse;border-spacing: 0}
+select{-webkit-appearance:menulist}
+
+
+
+/*********************************************************/
+/*basic*/
+/*********************************************************/
+
+.f_l {float:left}
+.f_r {float:right}
+.cl_b {clear:both}
+.show {display:block}
+.hide {display:none}
+.skip {position:absolute;top:-5000px;text-indent:-5000px;font-size:0;line-height:0;width:0;height:0;}/*내용과 영역 모두 숨김*/
+.skip_txt {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px}/*텍스트만 숨김*/

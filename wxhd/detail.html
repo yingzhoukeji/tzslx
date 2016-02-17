@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>台州蓝协活动内容</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/frozen.css" />
+		<link rel="stylesheet" type="text/css" href="css/path_menu.css"/>
+		<script src="js/weixin.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<style>
+				.ui-notice{top: 0;z-index: -1;}
+				.ui-dialog{margin: 0!important;padding: 0!important;  background: rgba(0,0,0,.65);opacity: 0.8;display:none;}
+	
+			body {
+				color: #222;
+				font-family: Microsoft YaHei, Helvitica, Verdana, Tohoma, Arial, san-serif;
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+			}
+			
+			.mui-bar-nav a{color: #fff;}
+			.mui-bar-nav a:active {
+			  color: #fff;
+			}
+			.mui-title{color: #fff;}
+			.mui-content-padded {
+			  font-size: 14px;
+			  margin: 10px;
+			  color: #333;
+			}
+			.mui-content{background:#0172BE}
+			html,
+			body {
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+				overflow: hidden;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+			
+			
+			.product-info{margin: 5px;border: 1px solid #ddd;border-radius: 3px;}
+			.product-img{width: 100%;padding: 0px;}
+			.product-img img{height: 100%;width: 100%;}
+			.product-title{font-size: 14px;}
+			.product-title span{font-size: 13px;}
+			.company{font-size: 12px;}
+			.mui-table-view-cell{
+				 padding: 5px 15px;
+				 font-size: 12px;
+			}
+			#msglist .mui-table-view-cell{
+				 padding: 15px 15px;
+				 font-size: 12px;
+			}
+			.mui-table-view-divider{background-color: #33276f;color:#fff;font-size:16px;}
+			.message span{width: 50%;font-size: 12px;text-align: center;}
+			.message span:first-child{border-right: 1px solid #ddd;}
+			.content,.canshu{
+				  font-size: 14px;
+				  padding: 10px;
+				  line-height:20px;
+				  background: #0172BE;
+				  color:#fff;
+			}
+			.mui-content{position: fixed;left: 0;right: 0;top:0;bottom: 55px;overflow-y: auto;}
+			::-webkit-scrollbar{width: 0px;}
+			.content p{color:#FFF;}
+			.content strong{font-size:14px; color:#FFF;}
+			.content img{display: none;width: 100%!important;max-height: 200px;}
+			.content table{width: 100%!important;overflow-x: hidden;}
+			.msgPanel{position: fixed;width: 100%;bottom: 0;top: 0;z-index: 100000;}
+			.sharebtn{
+				float: right;
+				  margin-top: -30px;
+				  background: #ff0000;
+				  color: #fff;
+				  padding: 5px;
+				  border-radius: 3px;
+			}
+			#mcover {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background: rgba(0, 0, 0, 0.7);
+			  display: none;
+			  z-index: 20000;
+			}
+			#mcover img {
+			  position: fixed;
+			  right: 18px;
+			  top: 5px;
+			  width: 260px!important;
+			  height: 180px!important;
+			  z-index: 20001;
+			}
+			.limit-panel{
+				position:fixed;
+				left:20px;
+				right:20px;
+				top:35%;
+				height:180px;
+				z-index:20000;
+				background: rgba(0, 0, 0, 0.7);
+				display:none;
+				color:#fff;
+				padding:20px;
+				border-radius:6px;
+			}
+			.limit-item{
+				margin-top:10px;
+				font-size:16px;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="mui-content mui-scroll">
+			<div class="product-img">
+				<img id="img">
+			</div>
+			
+			<ul class="mui-table-view" style="border: 1px solid #ddd;margin: 5px;padding:10px 0px">
+				
+				<li class="mui-table-view-cell mui-media">
+					<a href="javascript:;">
+						<div class="ui-avatar mui-media-object mui-pull-left">
+                        	<span id="headimgurl"></span>
+                    	</div>
+						<div class="mui-media-body">
+							<span><p id="nickname">hyl</p><p id='srcoe'>积分：1000</p></span>
+							<span class="sharebtn" onclick='$("#mcover").css("display","block");'>分享</span>
+						</div>
+					</a>
+				</li>
+				
+			</ul>
+			<div style="margin: 25px 5px 5px 5px;">
+				<b style="color:#F1FF64; font-size:18px;"><span>■</span> 活动简介</b>
+			</div>
+			<div class="canshu" id="summary">
+				
+			</div>
+			<div style="margin: 25px 5px 5px 5px;">
+				<b style="color:#F1FF64; font-size:18px;"><span>■</span> 活动介绍</b>
+			</div>
+			<div class="content" id="content">
+				
+			</div>
+			<div style="margin: 25px 5px 5px 5px;">
+				<b style="color:#F1FF64; font-size:18px;"><span>■</span> <b id="endtime"></b></b>
+			</div>
+			
+		</div>
+		<nav class="mui-bar mui-bar-tab" style="height:55px;">
+			<a class="mui-tab-item" href="list.html">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">活动大全</span>
+			</a>
+			<a class="mui-tab-item" onclick='$("#mcover").css("display","block");'>
+				<span class="mui-icon mui-icon-pengyouquan"></span>
+				<span class="mui-tab-label">我要推广</span>
+			</a>
+			<a class="mui-tab-item" href="userlist.html">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">积分排行</span>
+			</a>
+			<a class="mui-tab-item" onclick="openlimit()">
+				<span class="mui-icon mui-icon-star"></span>
+				<span class="mui-tab-label">积分换礼品</span>
+			</a>
+            <a class="mui-tab-item" id="tel" href="tel:">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">电话联系</span>
+			</a>
+		</nav>
+		<div class="ui-dialog ui-dialog-notice show"><div class="ui-dialog-cnt"><i class="ui-loading-bright"></i><p>加载中...</p></div></div>
+		<div id="mcover" onclick="document.getElementById('mcover').style.display='';" style="display: none;">
+            <img src="images/guide.png">
+        </div>
+		<div class="limit-panel">
+			<div class="limit-item">兑换礼品所需最低积分:<span id="limit">10000</span></div>
+			<div class="limit-item">你的当前积分:<span id="curr">5000</span></div>
+			<div class="limit-item" id="poor"></div>
+		</div>
+		<script type="text/javascript" src="js/common.js" ></script>
+		
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		
+		<script>
+			var hdObj=null;
+			var currsrcoe=0;
+			var limitsrcoe=0;
+		 	$(function(){
+				var query=GetQueryString("id");
+				var id=query.substring(0,1);
+				var mfrom=query.substring(1,query.length);
+				localStorage.setItem("hdid",id);
+				localStorage.setItem("from",mfrom);
+				if(localStorage.getItem("wx_user")){
+					//$("#content").append(localStorage.getItem("wx_user"));
+					var user=JSON.parse(localStorage.getItem("wx_user"));
+					var nickname=user.nickname;
+					var headimgurl=user.headimgurl;
+					$("#nickname").text(nickname);
+					if(headimgurl!=""){
+						$("#headimgurl").attr("style",'background-image:url('+headimgurl+')');
+					}
+					getDetail(id);
+					var getscoreUrl=wxhdUrl+"/getscore?openid="+user.openid+"&callback=?";
+					$.getJSON(getscoreUrl,function(json){
+						$("#srcoe").text("积分："+json.srcoe);
+						currsrcoe=parseInt(json.srcoe);
+					});
+					return;
+				}else{
+					
+						window.location.href="login.php";
+					
+					
+					return;
+					//window.location.href="login.php";
+				}
+		 		
+				
+		 	});
+			function getDetail(id){
+				var url=wxhdUrl+"/detail?id="+id+"&callback=?";
+				$.getJSON(url,function(json){
+					console.log(json);
+					$(".ui-dialog").hide();
+					hdObj=json;
+					setTimeout(function(){
+						initWeixin();
+					},2000);
+					
+					
+					$("#img").attr("src",picUrl+json.image);
+					$("#summary").html(json.summary);
+					var content=json.content.replaceAll("&lt;","<");
+					content=content.replaceAll("&gt;",">")
+					$("#content").append(content);
+					$("#tel").attr("href","tel:"+json.phone);
+					$("title").text(json.title);
+					limitsrcoe=parseInt(json.limit);
+					var date=new Date();
+					date.setTime(json.endtime * 1000);
+					var timestr = date.format("yyyy-MM-dd");
+					$("#endtime").text("活动结束日期："+timestr)
+				});
+			}
+			function openlimit(){
+				$("#limit").text(limitsrcoe);
+				$("#curr").text(currsrcoe);
+				var poor=limitsrcoe-currsrcoe;
+				if(poor>0){
+					$("#poor").text("你还差"+poor+"就可以领奖品了，加油！当你积分够了的时候，自动会出现领取按钮！");
+				}else{
+					$("#poor").html("你的积分已经达到兑换最低积分，快去领奖品吧！<button type='button' class='mui-btn' onclick='apply()'>去领取</button>");
+				}
+				$(".limit-panel").toggle();
+			}
+			function apply(){
+				window.location.href="apply.html";
+			}
+		</script><div style=" display:none;"><script src="http://s4.cnzz.com/stat.php?id=1257502840&web_id=1257502840" language="JavaScript"></script></div>
+	</body>
+</html>

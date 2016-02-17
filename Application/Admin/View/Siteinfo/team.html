@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>编辑报名信息-后台管理-{$site.SITE_INFO.name}</title>
+        <php>
+            $addCss="";
+            $addJs="";
+            $currentNav ='报名管理 > 编辑报名信息';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">编辑活动</div>
+                    </div>
+                    <form>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+						
+                            <tr>
+                                <th width="100">报名类型：</th>
+								<td>
+								<label class="mui-radio"><input name="type" type="radio" checked value="0" id="type0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迷你 </label> 
+									<label class="mui-radio"><input name="type" type="radio" value="1" id="type1"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;半马 </label> 
+									<label class="mui-radio"><input name="type" type="radio" value="2" id="type2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全马 </label>
+								 </td>
+                            </tr>
+								<tr>
+                                <th>团体名称：</th>
+                                <td><input id="title" type="text" class="input" size="60" name="teamname" value="{$info.teamname}"/></td>
+                            </tr>
+							<tr>
+                                <th>参赛人：</th>
+                                <td><input id="title" type="text" class="input" size="60" name="name" value="{$info.name}"/></td>
+                            </tr>
+							<tr>
+                                <th>电话号码：</th>
+                                <td><input id="title" type="text" class="input" size="60" name="telephone" value="{$info.telephone}"/></td>
+                            </tr>
+							
+							<tr>
+                                <th>报名时间</th>
+                                <td><input readonly="readonly" id="limit" type="text" class="input" size="60" name="createtime" value="{$info.createtime}"/></td>
+                            </tr>
+							<tr>
+                                <th>成绩</th>
+								
+                                <td><input id="limit" type="text" class="input" size="60" name="score" value="{$info.score}"/></td>
+                            </tr>
+							
+							<tr>
+								 <th>性别：</th>
+                                <td>
+									
+										<label>男<input type="radio" name="sex" value="0" checked/></label>
+										<label>女<input type="radio" name="sex" value="1"/></label>
+										
+									</td>
+								</tr>
+								<tr>
+									<th>证件号码：</th>
+									<td><input type="tel"  class="input" name="cardid" id="cardid" placeholder="输入你的身份证号"></td>
+								</tr>
+								<tr>
+								<th>是否台州户籍：</th>
+								 <td>
+										
+										<label class="mui-radio"><input name="istz" type="radio" value="1" checked />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是 </label> 
+										<label class="mui-radio"><input name="istz" type="radio" value="0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;否 </label> 
+									
+									</td>
+								</tr>
+								<tr>
+								<th>衣服尺寸：</th>
+								 <td>
+								  <label class="mui-radio"><input name="clothessize" type="radio" checked value="0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XXL </label> 
+										<label class="mui-radio"><input name="clothessize" type="radio" value="1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XL </label> 
+										<label class="mui-radio"><input name="clothessize" type="radio" value="2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L </label> 
+										<label class="mui-radio"><input name="clothessize" type="radio" value="3" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M </label> 
+										<label class="mui-radio"><input name="clothessize" type="radio" value="4" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S </label>  
+										</td>
+							
+								</tr>
+								<tr>
+								 <th>是否通过体检：</th>
+                                <td>
+									
+										<label class="mui-radio"><input name="istest" type="radio" checked value="1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是 </label> 
+										<label class="mui-radio"><input name="istest" type="radio" value="0" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;否 </label> 
+										 
+									</td>
+								</tr>
+								<tr>
+									<th>过往赛事：</th>
+									<td><input type="text" class="mui-input-speech mui-input-clear input" name="joinin" id="joinin" value="{$info.joinin}" placeholder="输入参与过的赛事"></td>
+								</tr>
+								<tr>
+									<th>最好半马成绩：</th>
+									
+									<td><input type="text" class="mui-input-speech mui-input-clear input" name="besttype1score" value="{$info.besttype1score}" id="besttype1score" placeholder=""></td>
+								</tr>
+								<tr>
+									<th>最好全马成绩：</th>
+									<td><input type="text" class="mui-input-speech mui-input-clear input" name="besttype1score" value="{$info.besttype2score}" id="besttype1score" placeholder=""></td>
+								</tr>
+								<tr>
+									<th>紧急联系人姓名：</th>
+									<td><input type="text" class="mui-input-speech mui-input-clear input" value="{$info.emergencycontactname}" name="emergencycontactname" id="emergencycontactname" placeholder="紧急联系人姓名"></td>
+								</tr>
+								<tr>
+									<th>紧急联系人电话：</th>
+									<td><input type="tel" class="mui-input-speech mui-input-clear input" value="{$info.emergencycontactphone}" name="emergencycontactphone" id="emergencycontactphone" placeholder="紧急联系人电话"></td>
+								</tr>
+						
+							 
+                        </table>
+                        <input type="hidden" name="isteam" value="1" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="--PUBLIC--/kindeditor/kindeditor.js,--PUBLIC--/kindeditor/lang/zh_CN.js,--PUBLIC--/My97DatePicker/WdatePicker.js"/>
+		
+        <script type="text/javascript">
+            $(function(){var  content ;
+                KindEditor.ready(function(K) {
+                    content = K.create('#content',{
+                        allowFileManager : true,
+                        uploadJson:'--PUBLIC--/kindeditor/php/upload_json.php?dirname=wxhd'
+                    });
+                });
+               
+                $(".submit").click(function(){
+                   
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+        <script>
+            KindEditor.ready(function(K) {
+                var editor = K.editor({
+                    allowFileManager : true,
+                    uploadJson:'--PUBLIC--/kindeditor/php/upload_json.php?dirname=wxhd'
+                });
+                K('#image1').click(function() {
+                    editor.loadPlugin('image', function() {
+                        editor.plugin.imageDialog({
+                            imageUrl : K('#url1').val(),
+                            clickFn : function(url, title, width, height, border, align) {
+                                K('#url1').val(url);
+                                editor.hideDialog();
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

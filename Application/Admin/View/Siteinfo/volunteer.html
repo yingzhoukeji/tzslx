@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>自愿者报名-{$site.SITE_INFO.name}</title>
+        <php>
+            $addCss="";
+            $addJs="";
+            $currentNav ='自愿者报名 > 报名列表';
+        </php>
+        <include file="Common:intoHead" />
+		<style>
+			.qrcode{
+				  /*width: 100%;
+				  height: 100%;
+				  position: fixed;
+				  top: 0;
+				  left: 0;
+				  background: #000;
+				  opacity: .6;
+				  -webkit-transform: translate3d(0,0,0);
+				  z-index: 20;*/
+				  display:none;
+				
+			}
+			.qrcontent{
+				  position: fixed;
+				  top: 35%;
+				  left: 0;
+				  right:0;
+				  height:200px;
+				  text-align:center;
+				  z-index: 100;
+				  
+			}
+			.btn_qrcode{
+				background:#417EB7;
+				padding:5px;
+				border-radius: 3px;
+				color: #fff;
+			}
+		</style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">报名列表</div>
+						
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>姓名</td>
+                                <td>电话号码</td>
+                                <td>性别</td>
+								 <td>出生日期</td>
+								 <td>单位</td>
+								 <td>近照</td>
+								<td>报名日期</td>
+                            </tr>
+                        </thead>
+                        <volist name="list" id="vo">
+                            <tr align="center" id="{$vo.id}">
+								<td>{$vo.id}</td>
+                                <td>{$vo.name}</td>
+								 <td>{$vo.phone}</td>
+                                <if condition="$vo.sex eq 0"> <td >男</td>
+								 <else /> <td >女</td>
+								 </if>
+								 <td>{$vo.birthday}</td>
+                                <td>{$vo.company}</td>
+								<td><img style="width:100px;height:100px;" src="http://www.tzslx.com/regiser/home/volunteer{$vo.img}"</td>
+                                <td>{$vo.createtime}</td>
+                            </tr>
+                        </volist>
+                        <tr><td colspan="6" align="right">{$page}</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+		<div class="qrcode">
+			<div class="qrcontent">
+				<img id="qrcode" src="http://qr.liantu.com/api.php?text=">
+			</div>
+			
+		</div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".del").click(function(){
+                    var delLink=$(this).attr("link");
+                    $this = $(this);
+                    popup.confirm('你真的打算删除【<b>'+$(this).attr("name")+'</b>】吗?','温馨提示',function(action){
+                        if(action == 'ok'){
+                            delByLink(delLink,$this);
+                            //top.window.location.href=delLink;
+                        }
+                    });
+                    return false;
+                });
+				$(".qrcode").click(function(){
+					$(".qrcode").hide();
+				});
+            });
+            function changeAttr(id,v){
+                $.get('{:U("News/changeAttr")}?id='+id,function(data){
+                    if(data.status==1){
+                        $(v).html(data.info);
+                    }
+                });
+            }
+            function changeStatus(id,v){
+                $.get('{:U("News/changeStatus")}?id='+id,function(data){
+                    if(data.status==1){
+                        $(v).html(data.info);
+                    }
+                });
+            }
+			function getQrcode(id){
+				var url="{$QRCODE_URL}{$WX_SITE}?id="+id+"0";
+				$("#qrcode").attr("src",url);
+				$(".qrcode").toggle();
+			}
+        </script>
+    </body>
+</html>
